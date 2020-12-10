@@ -1,4 +1,4 @@
-name: libphonenumber_package
+name: libphonenumber_plugin
 description: Flutter package for Google libphonenumber.
 version: 0.1.0
 homepage: https://github.com/natintosh/plugin_libphonenumber.git

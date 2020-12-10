@@ -1,20 +1,20 @@
-# libphonenumber_package
+# libphonenumber_plugin
 
-Flutter package for Google libphonenumber.
+Flutter plugin for Google libphonenumber.
 
 ## :warning: Notice
 
-This package only support **Web** for now, and has similar implementation with [libphonenumber](https://pub.dev/packages/libphonenumber).
+This plugin only support **Web** for now, and has similar implementation with [libphonenumber](https://pub.dev/packages/libphonenumber).
 
 ## Usage
 
-To use this package, add `libphonenumber_package: ^any` as a dependency in your pubspec.yaml file. 
+To use this plugin, add `libphonenumber_plugin: ^any` as a dependency in your pubspec.yaml file. 
 
 :warning: For **Android** and **IOS** usage use [libphonenumber](https://pub.dev/packages/libphonenumber).
 
 ### Android and IOS Usage
 
-This package does not support Android and IOS yet use [libphonenumber](https://pub.dev/packages/libphonenumber), since it was inspired by and has similar implementation with [libphonenumber](https://pub.dev/packages/libphonenumber).
+This plugin does not support Android and IOS yet use [libphonenumber](https://pub.dev/packages/libphonenumber), since it was inspired by and has similar implementation with [libphonenumber](https://pub.dev/packages/libphonenumber).
 
 ### Web Usage
 
@@ -31,8 +31,8 @@ In your app directory, edit `web/index.html` to add the following
     
         ...
 
-        <script src="packages/libphonenumber_package/js/libphonenumber.js"></script>
-        <script src="packages/libphonenumber_package/js/stringbuffer.js"></script>
+        <script src="packages/libphonenumber_plugin/js/libphonenumber.js"></script>
+        <script src="packages/libphonenumber_plugin/js/stringbuffer.js"></script>
 
         ...
 
@@ -43,9 +43,9 @@ In your app directory, edit `web/index.html` to add the following
 
 ### Using the plugin
 
-Once you have added `libphonenumber_package` package and edit `web/index.html`, you should be able to use the 
+Once you have added `libphonenumber_plugin` plugin and edit `web/index.html`, you should be able to use the 
 ```dart
-import 'package:libphonenumber_package/phone_number_util.dart';
+import 'package:libphonenumber_plugin/libphonenumber_plugin.dart';
 ```
 or any other source library available later on
 
@@ -58,7 +58,7 @@ For available methods see [libphonenumber_platform_interface](https://pub.dev/pa
   - Support for Android and IOS (Unsure)
 
 ## Contributions
-If you encounter any problem or the library is missing a feature feel free to open an issue. Feel free to fork, improve the package and make pull request.
+If you encounter any problem or the library is missing a feature feel free to open an issue. Feel free to fork, improve the plugin and make pull request.
 
 ## Contributors 
 <a href="https://github.com/natintosh/plugin_libphonenumber/graphs/contributors">

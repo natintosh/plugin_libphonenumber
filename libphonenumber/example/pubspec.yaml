@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  libphonenumber_package:
+  libphonenumber_plugin:
     path: ../
 
   cupertino_icons: ^1.0.0
