@@ -27,8 +27,8 @@ class _MyAppState extends State<MyApp> {
       String phoneNumber = '15556761234';
       String regionCode = 'US';
 
-      String formattedNumber =
-          await PhoneNumberUtil.formatAsYouType(phoneNumber, regionCode);
+      var formattedNumber =
+          await PhoneNumberUtil.getRegionInfo(phoneNumber, regionCode);
 
       print('\n\n\n Output ==>> $formattedNumber \n\n\n');
     } on PlatformException catch (e) {

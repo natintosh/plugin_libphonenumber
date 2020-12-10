@@ -1,7 +1,7 @@
 import 'package:flutter/services.dart';
 import 'package:libphonenumber_platform_interface/src/libphonenumber_platform.dart';
 
-class MethodChannelLibPhoneNumber implements LibPhoneNumberPlatform {
+class MethodChannelLibPhoneNumber extends LibPhoneNumberPlatform {
   MethodChannel methodChannel = MethodChannel('plugin.libphonenumber');
 
   @override
@@ -33,7 +33,7 @@ class MethodChannelLibPhoneNumber implements LibPhoneNumberPlatform {
   @override
   Future<Map<String, dynamic>> getRegionInfo(
       String phoneNumber, String isoCode) {
-    return methodChannel.invokeMethod('getRegionInfo', <String, dynamic>{
+    return methodChannel.invokeMapMethod('getRegionInfo', <String, dynamic>{
       'phoneNumber': phoneNumber,
       'isoCode': isoCode,
     });

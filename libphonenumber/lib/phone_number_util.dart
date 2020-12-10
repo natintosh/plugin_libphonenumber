@@ -29,7 +29,6 @@ class PhoneNumberUtil {
   static Future<PhoneNumberType> getNumberType(
       String phoneNumber, String isoCode) async {
     int index = await _platform.getNumberType(phoneNumber, isoCode);
-
     return PhoneNumberTypeUtil.getType(index);
   }
 
