@@ -23,8 +23,8 @@ dev_dependencies:
 
 flutter:
   assets:
-    - packages/libphonenumber_package/js/libphonenumber.js
-    - packages/libphonenumber_package/js/stringbuffer.js
+    - packages/libphonenumber_plugin/js/libphonenumber.js
+    - packages/libphonenumber_plugin/js/stringbuffer.js
     - assets/js/libphonenumber.js
     - assets/js/stringbuffer.js
 
