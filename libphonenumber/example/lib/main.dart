@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:libphonenumber/asyoutypeformatter.dart';
+import 'package:libphonenumber/phone_number_util.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,14 +24,13 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> initPlatformState() async {
     try {
-      String phonenumber = '15556761234';
-      AsYouTypeFormatter asYouTypeFormatter = AsYouTypeFormatter();
-      asYouTypeFormatter.initialize('US');
+      String phoneNumber = '15556761234';
+      String regionCode = 'US';
 
-      for (String number in phonenumber.split('')) {
-        print(
-            'FORMATTED INPUT: ${await asYouTypeFormatter.inputDigitAndRememberPosition(number)}');
-      }
+      String formattedNumber =
+          await PhoneNumberUtil.formatAsYouType(phoneNumber, regionCode);
+
+      print('\n\n\n Output ==>> $formattedNumber \n\n\n');
     } on PlatformException catch (e) {
       print('\n\n\n PLATFORM EXCEPTION: \n\n\n $e \n\n\n');
     }

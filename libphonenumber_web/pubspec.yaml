@@ -27,5 +27,5 @@ flutter:
   plugin:
     platforms:
       web:
-        pluginClass: AsYouTypeFormatterPlugin
-        fileName: asyoutypeformatter_plugin.dart
+        pluginClass: LibPhoneNumberPlugin
+        fileName: libphonenumber_web.dart
