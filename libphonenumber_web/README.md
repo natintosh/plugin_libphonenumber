@@ -18,9 +18,11 @@ In your app directory, edit `web/index.html` to add the following
         ...
     </head>
     <body>
+    
+        ...
 
-        <script src="packages/libphonenumber_package/js/        libphonenumber.js"></script>
-        <script src="web/js/stringbuffer.js"></script>
+        <script src="packages/libphonenumber_package/js/libphonenumber.js"></script>
+        <script src="packages/libphonenumber_package/js/stringbuffer.js"></script>
 
         ...
 

@@ -82,9 +82,9 @@ packages:
   libphonenumber_web:
     dependency: "direct main"
     description:
-      path: "../libphonenumber_web"
-      relative: true
-    source: path
+      name: libphonenumber_web
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "0.1.0"
   matcher:
     dependency: transitive

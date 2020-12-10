@@ -12,10 +12,6 @@ dependencies:
 
   libphonenumber_package:
     path: ../
-  
-  libphonenumber_web:
-    path: ../../libphonenumber_web
-
 
   cupertino_icons: ^1.0.0
 

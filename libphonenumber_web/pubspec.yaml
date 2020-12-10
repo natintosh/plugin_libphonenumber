@@ -1,6 +1,6 @@
 name: libphonenumber_web
 description: The web implementation of libphonenumber
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/natintosh/plugin_libphonenumber.git
 
 environment:
