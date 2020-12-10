@@ -1,8 +1,7 @@
 name: libphonenumber_package
-description: A new flutter plugin project.
-version: 0.0.1
-author: LoremIpsum
-homepage: LoremIpsum
+description: Flutter package for Google libphonenumber.
+version: 0.1.0
+homepage: https://github.com/natintosh/plugin_libphonenumber.git
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -16,7 +15,7 @@ dependencies:
   
   libphonenumber_platform_interface: ^0.2.0
 
-  libphonenumber_web: ^0.1.0
+  libphonenumber_web: ^0.1.1
 
 dev_dependencies:
   flutter_test:
