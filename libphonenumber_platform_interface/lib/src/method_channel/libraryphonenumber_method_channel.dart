@@ -1,9 +1,7 @@
-// part of method_channel_libraryphonenumber;
-
 import 'package:flutter/services.dart';
-import 'package:libphonenumber_platform_interface/src/asyoutypeformatter_platform_interface.dart';
+import 'package:libphonenumber_platform_interface/src/libraryphonenumber_platform.dart';
 
-class MethodChannelAsYouTypeFormatter extends AsYouTypeFormatterPlatform {
+class MethodChannelLibraryPhoneNumber extends LibraryPhoneNumberPlatform {
   MethodChannel methodChannel = MethodChannel('plugin.libraryphonenumber');
 
   @override
@@ -30,16 +28,6 @@ class MethodChannelAsYouTypeFormatter extends AsYouTypeFormatterPlatform {
   Future<String> inputDigit(String nextChar) {
     return methodChannel.invokeMethod<String>(
       'inputDigit',
-      <String, Object>{
-        'nextChar': nextChar,
-      },
-    );
-  }
-
-  @override
-  Future<String> inputDigitAndRememberPosition(String nextChar) {
-    return methodChannel.invokeMethod<String>(
-      'inputDigitAndRememberPosition',
       <String, Object>{
         'nextChar': nextChar,
       },
