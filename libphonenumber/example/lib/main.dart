@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:libphonenumber/phone_number_util.dart';
+import 'package:libphonenumber_package/phone_number_util.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
       String regionCode = 'US';
 
       var formattedNumber =
-          await PhoneNumberUtil.getRegionInfo(phoneNumber, regionCode);
+          await PhoneNumberUtil.formatAsYouType(phoneNumber, regionCode);
 
       print('\n\n\n Output ==>> $formattedNumber \n\n\n');
     } on PlatformException catch (e) {

@@ -1,8 +1,7 @@
 name: libphonenumber_web
-description: A new flutter plugin project.
-version: 0.0.1
-author: LoremIpsum
-homepage: LoremIpsum
+description: The web implementation of libphonenumber
+version: 0.1.0
+homepage: https://github.com/natintosh/plugin_libphonenumber.git
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -15,9 +14,7 @@ dependencies:
     sdk: flutter
 
   js: ^0.6.2
-  
-  libphonenumber_platform_interface:
-    path: ../libphonenumber_platform_interface
+  libphonenumber_platform_interface: ^0.2.0
 
 dev_dependencies:
   flutter_test:

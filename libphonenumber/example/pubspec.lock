@@ -79,7 +79,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.3-nullsafety.1"
-  libphonenumber:
+  libphonenumber_package:
     dependency: "direct main"
     description:
       path: ".."
@@ -89,17 +89,17 @@ packages:
   libphonenumber_platform_interface:
     dependency: transitive
     description:
-      path: "../../libphonenumber_platform_interface"
-      relative: true
-    source: path
-    version: "0.0.1"
+      name: libphonenumber_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.0"
   libphonenumber_web:
     dependency: "direct main"
     description:
       path: "../../libphonenumber_web"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.1.0"
   matcher:
     dependency: transitive
     description:

@@ -1,4 +1,4 @@
-name: libphonenumber
+name: libphonenumber_package
 description: A new flutter plugin project.
 version: 0.0.1
 author: LoremIpsum
@@ -14,8 +14,7 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter  
   
-  libphonenumber_platform_interface:
-    path: ../libphonenumber_platform_interface
+  libphonenumber_platform_interface: ^0.2.0
 
   libphonenumber_web:
     path: ../libphonenumber_web
@@ -25,6 +24,12 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
+  assets:
+    - packages/libphonenumber_package/js/libphonenumber.js
+    - packages/libphonenumber_package/js/stringbuffer.js
+    - assets/js/libphonenumber.js
+    - assets/js/stringbuffer.js
+
   plugin:
     platforms:
       web:
