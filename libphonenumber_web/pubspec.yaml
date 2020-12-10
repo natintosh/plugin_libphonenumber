@@ -1,0 +1,31 @@
+name: libphonenumber_web
+description: A new flutter plugin project.
+version: 0.0.1
+author: LoremIpsum
+homepage: LoremIpsum
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.20.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+
+  js: ^0.6.2
+  
+  libphonenumber_platform_interface:
+    path: ../libphonenumber_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      web:
+        pluginClass: AsYouTypeFormatterPlugin
+        fileName: asyoutypeformatter_plugin.dart
