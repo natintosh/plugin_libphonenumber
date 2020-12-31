@@ -24,8 +24,8 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> initPlatformState() async {
     try {
-      String phoneNumber = '15556761234';
-      String regionCode = 'US';
+      String phoneNumber = '447082286079';
+      String regionCode = 'UK';
 
       var formattedNumber =
           await PhoneNumberUtil.formatAsYouType(phoneNumber, regionCode);
