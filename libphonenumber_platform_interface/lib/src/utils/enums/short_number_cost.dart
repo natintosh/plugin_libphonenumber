@@ -20,16 +20,12 @@ class ShortNumberCostUtil {
     switch (value) {
       case 0:
         return ShortNumberCost.TOLL_FREE;
-        break;
       case 1:
         return ShortNumberCost.STANDARD_RATE;
-        break;
       case 2:
         return ShortNumberCost.PREMIUM_RATE;
-        break;
       default:
         return ShortNumberCost.UNKNOWN_COST;
-        break;
     }
   }
 }
@@ -39,16 +35,12 @@ extension shortnumbercostproperties on ShortNumberCost {
     switch (this) {
       case ShortNumberCost.TOLL_FREE:
         return 0;
-        break;
       case ShortNumberCost.STANDARD_RATE:
         return 1;
-        break;
       case ShortNumberCost.PREMIUM_RATE:
         return 2;
-        break;
       default:
         return 3;
-        break;
     }
   }
 }

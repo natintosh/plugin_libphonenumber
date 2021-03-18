@@ -54,40 +54,28 @@ class PhoneNumberTypeUtil {
     switch (value) {
       case 0:
         return PhoneNumberType.FIXED_LINE;
-        break;
       case 1:
         return PhoneNumberType.MOBILE;
-        break;
       case 2:
         return PhoneNumberType.FIXED_LINE_OR_MOBILE;
-        break;
       case 3:
         return PhoneNumberType.TOLL_FREE;
-        break;
       case 4:
         return PhoneNumberType.PREMIUM_RATE;
-        break;
       case 5:
         return PhoneNumberType.SHARED_COST;
-        break;
       case 6:
         return PhoneNumberType.VOIP;
-        break;
       case 7:
         return PhoneNumberType.PERSONAL_NUMBER;
-        break;
       case 8:
         return PhoneNumberType.PAGER;
-        break;
       case 9:
         return PhoneNumberType.UAN;
-        break;
       case 10:
         return PhoneNumberType.VOICEMAIL;
-        break;
       default:
         return PhoneNumberType.UNKNOWN;
-        break;
     }
   }
 }
@@ -97,40 +85,28 @@ extension phonenumbertypeproperties on PhoneNumberType {
     switch (this) {
       case PhoneNumberType.FIXED_LINE:
         return 0;
-        break;
       case PhoneNumberType.MOBILE:
         return 1;
-        break;
       case PhoneNumberType.FIXED_LINE_OR_MOBILE:
         return 2;
-        break;
       case PhoneNumberType.TOLL_FREE:
         return 3;
-        break;
       case PhoneNumberType.PREMIUM_RATE:
         return 4;
-        break;
       case PhoneNumberType.SHARED_COST:
         return 5;
-        break;
       case PhoneNumberType.VOIP:
         return 6;
-        break;
       case PhoneNumberType.PERSONAL_NUMBER:
         return 7;
-        break;
       case PhoneNumberType.PREMIUM_RATE:
         return 8;
-        break;
       case PhoneNumberType.UAN:
         return 9;
-        break;
       case PhoneNumberType.VOICEMAIL:
         return 10;
-        break;
       default:
         return -1;
-        break;
     }
   }
 }

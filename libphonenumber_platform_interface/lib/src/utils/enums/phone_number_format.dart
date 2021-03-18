@@ -33,19 +33,14 @@ class PhoneNumberFormatUtil {
     switch (value) {
       case 0:
         return PhoneNumberFormat.E164;
-        break;
       case 1:
-        return PhoneNumberFormat.INTERNATIONAL;
-        break;
+        return PhoneNumberFormat.INTERNATIONAL;        
       case 2:
         return PhoneNumberFormat.NATIONAL;
-        break;
       case 3:
         return PhoneNumberFormat.RFC3966;
-        break;
       default:
         return PhoneNumberFormat.E164;
-        break;
     }
   }
 }
@@ -55,19 +50,19 @@ extension phonenumberformatproperties on PhoneNumberFormat {
     switch (this) {
       case PhoneNumberFormat.E164:
         return 0;
-        break;
+        
       case PhoneNumberFormat.INTERNATIONAL:
         return 1;
-        break;
+        
       case PhoneNumberFormat.NATIONAL:
         return 2;
-        break;
+        
       case PhoneNumberFormat.RFC3966:
         return 3;
-        break;
+        
       default:
         return 0;
-        break;
+        
     }
   }
 }
