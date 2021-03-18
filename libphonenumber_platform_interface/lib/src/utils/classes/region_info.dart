@@ -1,7 +1,7 @@
 class RegionInfo {
-  String regionPrefix;
-  String isoCode;
-  String formattedPhoneNumber;
+  String? regionPrefix;
+  String? isoCode;
+  String? formattedPhoneNumber;
 
   RegionInfo({this.regionPrefix, this.isoCode, this.formattedPhoneNumber});
 
