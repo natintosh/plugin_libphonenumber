@@ -5,7 +5,7 @@ class MethodChannelLibPhoneNumber extends LibPhoneNumberPlatform {
   MethodChannel methodChannel = MethodChannel('plugin.libphonenumber');
 
   @override
-  Future<String> formatAsYouType(String phoneNumber, String isoCode) {
+  Future<String?> formatAsYouType(String phoneNumber, String isoCode) {
     return methodChannel
         .invokeMethod<String>('formatAsYouType', <String, dynamic>{
       'phoneNumber': phoneNumber,
@@ -14,7 +14,7 @@ class MethodChannelLibPhoneNumber extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<String> getNameForNumber(String phoneNumber, String isoCode) {
+  Future<String?> getNameForNumber(String phoneNumber, String isoCode) {
     return methodChannel
         .invokeMethod<String>('getNameForNumber', <String, dynamic>{
       'phoneNumber': phoneNumber,
@@ -23,7 +23,7 @@ class MethodChannelLibPhoneNumber extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<int> getNumberType(String phoneNumber, String isoCode) {
+  Future<int?> getNumberType(String phoneNumber, String isoCode) {
     return methodChannel.invokeMethod<int>('getNumberType', <String, dynamic>{
       'phoneNumber': phoneNumber,
       'isoCode': isoCode,
@@ -31,7 +31,7 @@ class MethodChannelLibPhoneNumber extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<Map<String, dynamic>> getRegionInfo(
+  Future<Map<String, dynamic>?> getRegionInfo(
       String phoneNumber, String isoCode) {
     return methodChannel.invokeMapMethod('getRegionInfo', <String, dynamic>{
       'phoneNumber': phoneNumber,
@@ -40,7 +40,7 @@ class MethodChannelLibPhoneNumber extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<bool> isValidNumber(String phoneNumber, String isoCode) {
+  Future<bool?> isValidNumber(String phoneNumber, String isoCode) {
     return methodChannel.invokeMethod<bool>('isValidNumber', <String, dynamic>{
       'phoneNumber': phoneNumber,
       'isoCode': isoCode,
@@ -48,7 +48,7 @@ class MethodChannelLibPhoneNumber extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<String> normalizePhoneNumber(String phoneNumber, String isoCode) {
+  Future<String?> normalizePhoneNumber(String phoneNumber, String isoCode) {
     return methodChannel
         .invokeMethod<String>('normalizePhoneNumber', <String, dynamic>{
       'phoneNumber': phoneNumber,
