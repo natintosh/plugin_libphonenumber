@@ -34,7 +34,7 @@ class PhoneNumberFormatUtil {
       case 0:
         return PhoneNumberFormat.E164;
       case 1:
-        return PhoneNumberFormat.INTERNATIONAL;        
+        return PhoneNumberFormat.INTERNATIONAL;
       case 2:
         return PhoneNumberFormat.NATIONAL;
       case 3:
@@ -50,19 +50,14 @@ extension phonenumberformatproperties on PhoneNumberFormat {
     switch (this) {
       case PhoneNumberFormat.E164:
         return 0;
-        
       case PhoneNumberFormat.INTERNATIONAL:
         return 1;
-        
       case PhoneNumberFormat.NATIONAL:
         return 2;
-        
       case PhoneNumberFormat.RFC3966:
         return 3;
-        
       default:
         return 0;
-        
     }
   }
 }
