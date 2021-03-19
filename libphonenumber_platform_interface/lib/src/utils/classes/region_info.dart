@@ -5,10 +5,10 @@ class RegionInfo {
 
   RegionInfo({this.regionPrefix, this.isoCode, this.formattedPhoneNumber});
 
-  RegionInfo.fromJson(Map<String, dynamic> json) {
-    regionPrefix = json['regionPrefix'];
-    isoCode = json['isoCode'];
-    formattedPhoneNumber = json['formattedPhoneNumber'];
+  RegionInfo.fromJson(Map<String, dynamic>? json) {
+    regionPrefix = json?['regionPrefix'];
+    isoCode = json?['isoCode'];
+    formattedPhoneNumber = json?['formattedPhoneNumber'];
   }
 
   Map<String, dynamic> toJson() {

@@ -19,20 +19,16 @@ enum CountryCodeSource {
 }
 
 class CountryCodeSourceUtil {
-  static CountryCodeSource getType(int value) {
+  static CountryCodeSource getType(int? value) {
     switch (value) {
       case 1:
         return CountryCodeSource.FROM_NUMBER_WITH_PLUS_SIGN;
-
       case 5:
         return CountryCodeSource.FROM_NUMBER_WITH_IDD;
-
       case 10:
         return CountryCodeSource.FROM_NUMBER_WITHOUT_PLUS_SIGN;
-
       case 20:
         return CountryCodeSource.FROM_DEFAULT_COUNTRY;
-
       default:
         return CountryCodeSource.UNSPECIFIED;
     }

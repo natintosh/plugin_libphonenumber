@@ -16,7 +16,7 @@ enum ShortNumberCost {
 }
 
 class ShortNumberCostUtil {
-  static ShortNumberCost getType(int value) {
+  static ShortNumberCost getType(int? value) {
     switch (value) {
       case 0:
         return ShortNumberCost.TOLL_FREE;

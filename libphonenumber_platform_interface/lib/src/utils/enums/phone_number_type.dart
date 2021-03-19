@@ -50,7 +50,7 @@ enum PhoneNumberType {
 }
 
 class PhoneNumberTypeUtil {
-  static PhoneNumberType getType(int value) {
+  static PhoneNumberType getType(int? value) {
     switch (value) {
       case 0:
         return PhoneNumberType.FIXED_LINE;

@@ -29,7 +29,7 @@ enum PhoneNumberFormat {
 }
 
 class PhoneNumberFormatUtil {
-  static PhoneNumberFormat getType(int value) {
+  static PhoneNumberFormat getType(int? value) {
     switch (value) {
       case 0:
         return PhoneNumberFormat.E164;
