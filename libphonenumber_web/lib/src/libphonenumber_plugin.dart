@@ -21,32 +21,26 @@ class LibPhoneNumberPlugin extends LibPhoneNumberPlatform {
         String phoneNumber = call.arguments['phoneNumber'];
         String isoCode = call.arguments['isoCode'];
         return formatAsYouType(phoneNumber, isoCode);
-        break;
       case 'getNameForNumber':
         String phoneNumber = call.arguments['phoneNumber'];
         String isoCode = call.arguments['isoCode'];
         return getNameForNumber(phoneNumber, isoCode);
-        break;
       case 'getNumberType':
         String phoneNumber = call.arguments['phoneNumber'];
         String isoCode = call.arguments['isoCode'];
         return getNumberType(phoneNumber, isoCode);
-        break;
       case 'getRegionInfo':
         String phoneNumber = call.arguments['phoneNumber'];
         String isoCode = call.arguments['isoCode'];
         return getRegionInfo(phoneNumber, isoCode);
-        break;
       case 'isValidNumber':
         String phoneNumber = call.arguments['phoneNumber'];
         String isoCode = call.arguments['isoCode'];
         return isValidNumber(phoneNumber, isoCode);
-        break;
       case 'normalizePhoneNumber':
         String phoneNumber = call.arguments['phoneNumber'];
         String isoCode = call.arguments['isoCode'];
         return normalizePhoneNumber(phoneNumber, isoCode);
-        break;
       default:
         throw PlatformException(
             code: 'Unimplemented',
