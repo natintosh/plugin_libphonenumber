@@ -1,7 +1,7 @@
 import 'package:libphonenumber_platform_interface/src/method_channel/libhonenumber_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
-class LibPhoneNumberPlatform extends PlatformInterface {
+abstract class LibPhoneNumberPlatform extends PlatformInterface {
   LibPhoneNumberPlatform() : super(token: _token);
 
   static final Object _token = Object();
