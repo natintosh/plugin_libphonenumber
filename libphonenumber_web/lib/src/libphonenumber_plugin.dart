@@ -9,10 +9,10 @@ class LibPhoneNumberPlugin extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<String> formatAsYouType(String phoneNumber, String isoCode) async {
+  Future<String?> formatAsYouType(String phoneNumber, String isoCode) async {
     AsYouTypeFormatterJsImpl phoneUtilJsImpl =
         AsYouTypeFormatterJsImpl(isoCode.toUpperCase());
-    String result;
+    String? result;
 
     for (int i = 0; i < phoneNumber.length; i++) {
       result = phoneUtilJsImpl.inputDigit(phoneNumber[i]);
@@ -22,13 +22,13 @@ class LibPhoneNumberPlugin extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<String> getNameForNumber(String phoneNumber, String isoCode) async {
+  Future<String?> getNameForNumber(String phoneNumber, String isoCode) async {
     throw new UnimplementedError(
         'getNameForNumber not implement for Flutter Web');
   }
 
   @override
-  Future<int> getNumberType(String phoneNumber, String isoCode) async {
+  Future<int?> getNumberType(String phoneNumber, String isoCode) async {
     PhoneNumberUtilJsImpl phoneUtilJsImpl = PhoneNumberUtilJsImpl.getInstance();
     PhoneNumberJsImpl phoneNumberJsImpl =
         phoneUtilJsImpl.parse(phoneNumber, isoCode.toUpperCase());
@@ -39,7 +39,7 @@ class LibPhoneNumberPlugin extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<Map<String, dynamic>> getRegionInfo(
+  Future<Map<String, dynamic>?> getRegionInfo(
       String phoneNumber, String isoCode) async {
     PhoneNumberUtilJsImpl phoneUtilJsImpl = PhoneNumberUtilJsImpl.getInstance();
     PhoneNumberJsImpl phoneNumberJsImpl =
@@ -60,7 +60,7 @@ class LibPhoneNumberPlugin extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<bool> isValidNumber(String phoneNumber, String isoCode) async {
+  Future<bool?> isValidNumber(String phoneNumber, String isoCode) async {
     PhoneNumberUtilJsImpl phoneUtilJsImpl = PhoneNumberUtilJsImpl.getInstance();
     PhoneNumberJsImpl phoneNumberJsImpl =
         phoneUtilJsImpl.parse(phoneNumber, isoCode.toUpperCase());
@@ -69,7 +69,7 @@ class LibPhoneNumberPlugin extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<String> normalizePhoneNumber(
+  Future<String?> normalizePhoneNumber(
       String phoneNumber, String isoCode) async {
     PhoneNumberUtilJsImpl phoneUtilJsImpl = PhoneNumberUtilJsImpl.getInstance();
     PhoneNumberJsImpl phoneNumberJsImpl =
