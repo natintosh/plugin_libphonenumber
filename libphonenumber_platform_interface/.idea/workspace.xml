@@ -20,33 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0c6e94d-2f5f-4542-b8a7-c0ce23235f89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libphonenumber_platform_interface.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libphonenumber_plugin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/libphonenumber_platform.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/libphonenumber_platform.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/runConfigurations/example_lib_main_dart.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/test/widget_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/lib/src/interop/phonenumber_interop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/lib/src/interop/phonenumber_interop.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/lib/src/interop/phonenumberutil_interop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/lib/src/interop/phonenumberutil_interop.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/lib/src/libphonenumber_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/lib/src/libphonenumber_plugin.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/libphonenumber_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/libphonenumber_web.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

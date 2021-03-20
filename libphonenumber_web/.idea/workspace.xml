@@ -20,20 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08d9f675-7405-413d-9f1d-e721d9af796a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/runConfigurations/example_lib_main_dart.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/test/widget_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/libphonenumber_plugin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/interop/phonenumber_interop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/interop/phonenumber_interop.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/interop/phonenumberutil_interop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/interop/phonenumberutil_interop.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/libphonenumber_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/libphonenumber_plugin.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libphonenumber_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libphonenumber_web.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
