@@ -110,18 +110,18 @@ class PhoneNumberJsImpl {
   @JS('clearRawInput')
   external void clearRawInput();
 
-/**
-  Enumeration CountryCodeSource.
-  @enum {number}
- 
-    i18n.phonenumbers.PhoneNumber.CountryCodeSource = {
-      UNSPECIFIED: 0,
-      FROM_NUMBER_WITH_PLUS_SIGN: 1,
-      FROM_NUMBER_WITH_IDD: 5,
-      FROM_NUMBER_WITHOUT_PLUS_SIGN: 10,
-      FROM_DEFAULT_COUNTRY: 20
-};
- */
+  ///
+  ///     Enumeration CountryCodeSource.
+  ///     @enum {number}
+  ///
+  ///    i18n.phonenumbers.PhoneNumber.CountryCodeSource = {
+  ///      UNSPECIFIED: 0,
+  ///      FROM_NUMBER_WITH_PLUS_SIGN: 1,
+  ///      FROM_NUMBER_WITH_IDD: 5,
+  ///      FROM_NUMBER_WITHOUT_PLUS_SIGN: 10,
+  ///      FROM_DEFAULT_COUNTRY: 20
+  ///   };
+  ///
 
   @JS('getCountryCodeSource')
   external int getCountryCodeSource();
@@ -141,9 +141,7 @@ class PhoneNumberJsImpl {
   @JS('clearCountryCodeSource')
   external void clearCountryCodeSource();
 
-/**
- * END
- */
+  // END
 
   @JS('getPreferredDomesticCarrierCode')
   external String getPreferredDomesticCarrierCode();

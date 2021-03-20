@@ -4,8 +4,7 @@ import 'package:libphonenumber_web/src/interop/libphonenumber_interop.dart';
 
 class LibPhoneNumberPlugin extends LibPhoneNumberPlatform {
   static void registerWith(Registrar registrar) {
-    final LibPhoneNumberPlugin instance = LibPhoneNumberPlugin();
-    LibPhoneNumberPlatform.instance = instance;
+    LibPhoneNumberPlatform.instance = LibPhoneNumberPlugin();
   }
 
   @override

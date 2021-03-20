@@ -10,7 +10,7 @@ abstract class LibPhoneNumberPlatform extends PlatformInterface {
 
   static LibPhoneNumberPlatform get instance => _instance;
 
-  static set instance(LibPhoneNumberPlatform intance) {
+  static set instance(LibPhoneNumberPlatform instance) {
     PlatformInterface.verifyToken(instance, _token);
     _instance = instance;
   }
