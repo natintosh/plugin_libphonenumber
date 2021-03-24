@@ -21,7 +21,16 @@
   <component name="ChangeListManager">
     <list default="true" id="08d9f675-7405-413d-9f1d-e721d9af796a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/method_channel/libhonenumber_method_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/method_channel/libhonenumber_method_channel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libphonenumber_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libphonenumber_plugin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/lib/src/phone_number_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/lib/src/phone_number_util.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/libphonenumber_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/libphonenumber_plugin.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +47,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../libphonenumber_platform_interface" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="SvnConfiguration">
@@ -66,15 +77,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1616240727106">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="488" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1616240727106" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1616240600042">
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1616589295895">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1616240600042" />
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1616589295895" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1616589390923">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1616589390923" />
   </component>
 </project>

@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:libphonenumber_plugin/libphonenumber_plugin.dart';
 
@@ -24,12 +24,11 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> initPlatformState() async {
     try {
-      String phoneNumber = '15556761234';
-      String regionCode = 'US';
+      String phoneNumber = '+2347082286079';
+      String regionCode = 'NG';
 
       var formattedNumber =
-          await PhoneNumberUtil.formatAsYouType(phoneNumber, regionCode);
-
+          await PhoneNumberUtil.normalizePhoneNumber(phoneNumber, regionCode);
 
       print('\n\n\n Output ==>> $formattedNumber \n\n\n');
     } on PlatformException catch (e) {

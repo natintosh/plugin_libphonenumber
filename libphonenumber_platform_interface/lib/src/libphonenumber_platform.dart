@@ -19,8 +19,8 @@ abstract class LibPhoneNumberPlatform extends PlatformInterface {
     throw UnimplementedError('getNameForNumber() has not been implemented.');
   }
 
-  Future<bool?> isValidNumber(String phoneNumber, String isoCode) async {
-    throw UnimplementedError('isValidNumber() has not been implemented.');
+  Future<bool?> isValidPhoneNumber(String phoneNumber, String isoCode) async {
+    throw UnimplementedError('isValidPhoneNumber() has not been implemented.');
   }
 
   Future<String?> normalizePhoneNumber(
