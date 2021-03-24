@@ -41,5 +41,7 @@ flutter:
       android:
         package: com.example.libphonenumber_plugin
         pluginClass: LibphonenumberPlugin
+      ios:
+        pluginClass: FLTLibphonenumberPlugin
       web:
         default_package: libphonenumber_web
