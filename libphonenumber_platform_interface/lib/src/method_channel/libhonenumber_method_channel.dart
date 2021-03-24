@@ -42,7 +42,7 @@ class MethodChannelLibPhoneNumber extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<bool?> isValidNumber(String phoneNumber, String isoCode) async {
+  Future<bool?> isValidPhoneNumber(String phoneNumber, String isoCode) async {
     return await methodChannel
         .invokeMethod<bool>('isValidPhoneNumber', <String, dynamic>{
       'phoneNumber': phoneNumber,

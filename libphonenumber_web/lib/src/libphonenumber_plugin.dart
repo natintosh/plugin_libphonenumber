@@ -59,7 +59,7 @@ class LibPhoneNumberPlugin extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<bool?> isValidNumber(String phoneNumber, String isoCode) async {
+  Future<bool?> isValidPhoneNumber(String phoneNumber, String isoCode) async {
     PhoneNumberUtilJsImpl phoneUtilJsImpl = PhoneNumberUtilJsImpl.getInstance();
     PhoneNumberJsImpl phoneNumberJsImpl =
         phoneUtilJsImpl.parse(phoneNumber, isoCode.toUpperCase());

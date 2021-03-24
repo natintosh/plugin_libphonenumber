@@ -19,7 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ad297e8-2038-4b8c-babe-91c4ef3a37ea" name="Default Changelist" comment="" />
+    <list default="true" id="5ad297e8-2038-4b8c-babe-91c4ef3a37ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/method_channel/libhonenumber_method_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/method_channel/libhonenumber_method_channel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libphonenumber_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libphonenumber_plugin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/example/libphonenumber_plugin/LibphonenumberPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/example/libphonenumber_plugin/LibphonenumberPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/phone_number_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/phone_number_util.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/lib/src/libphonenumber_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/lib/src/libphonenumber_plugin.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,11 +53,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../libphonenumber_web" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Flutter.example/lib/main.dart">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
       <method v="2" />
@@ -75,9 +90,25 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="319" y="139" key="FileChooserDialogImpl" timestamp="1616239415949">
+    <state x="319" y="139" key="FileChooserDialogImpl" timestamp="1616588690088">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="319" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1616239415949" />
+    <state x="319" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1616588690088" />
+    <state width="1306" height="297" key="GridCell.Tab.0.bottom" timestamp="1616590294821">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1306" height="297" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1616590294821" />
+    <state width="1306" height="297" key="GridCell.Tab.0.center" timestamp="1616590294820">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1306" height="297" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1616590294820" />
+    <state width="1306" height="297" key="GridCell.Tab.0.left" timestamp="1616590294819">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1306" height="297" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1616590294819" />
+    <state width="1306" height="297" key="GridCell.Tab.0.right" timestamp="1616590294820">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1306" height="297" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1616590294820" />
   </component>
 </project>

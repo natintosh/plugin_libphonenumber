@@ -20,7 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0c6e94d-2f5f-4542-b8a7-c0ce23235f89" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/libphonenumber_platform.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/libphonenumber_platform.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/method_channel/libhonenumber_method_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/method_channel/libhonenumber_method_channel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libphonenumber_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libphonenumber_plugin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/lib/src/phone_number_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/lib/src/phone_number_util.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/lib/src/libphonenumber_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/lib/src/libphonenumber_plugin.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../libphonenumber_plugin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -68,11 +78,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="319" y="139" key="FileChooserDialogImpl" timestamp="1616239402595">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="319" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1616239402595" />
+    <state x="339" y="41" width="672" height="676" key="search.everywhere.popup" timestamp="1616589318196">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="41" width="672" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1616589318196" />
   </component>
 </project>

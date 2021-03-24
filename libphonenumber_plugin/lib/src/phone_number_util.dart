@@ -9,8 +9,9 @@ class PhoneNumberUtil {
     return _platform.getNameForNumber(phoneNumber, isoCode);
   }
 
-  static Future<bool?> isValidNumber(String phoneNumber, String isoCode) async {
-    return _platform.isValidNumber(phoneNumber, isoCode);
+  static Future<bool?> isValidPhoneNumber(
+      String phoneNumber, String isoCode) async {
+    return _platform.isValidPhoneNumber(phoneNumber, isoCode);
   }
 
   static Future<String?> normalizePhoneNumber(
