@@ -17,16 +17,22 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
     switch call.method {
     case "isValidPhoneNumber":
         onDirectMethodCall(call: call, result: result)
+        break
     case "normalizePhoneNumber":
         onDirectMethodCall(call: call, result: result)
+        break
     case "getRegionInfo":
         onDirectMethodCall(call: call, result: result)
+        break
     case "getNumberType":
         onDirectMethodCall(call: call, result: result)
+        break
     case "formatAsYouType":
         onDirectMethodCall(call: call, result: result)
+        break
     case "getNameForNumber":
         onDirectMethodCall(call: call, result: result)
+        break
     default:
         result(FlutterMethodNotImplemented)
     }
@@ -42,5 +48,6 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
         let methodCall:FlutterMethodCall = FlutterMethodCall(methodName: call.method, arguments: data)
         
         libphonenumber.handle(methodCall, result: result)
+        return
     }
 }

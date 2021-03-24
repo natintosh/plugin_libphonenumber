@@ -28,7 +28,8 @@ class _MyAppState extends State<MyApp> {
       String regionCode = 'US';
 
       var formattedNumber =
-          await PhoneNumberUtil.getNumberType(phoneNumber, regionCode);
+          await PhoneNumberUtil.formatAsYouType(phoneNumber, regionCode);
+
 
       print('\n\n\n Output ==>> $formattedNumber \n\n\n');
     } on PlatformException catch (e) {
