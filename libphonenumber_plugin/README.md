@@ -4,7 +4,9 @@ Flutter plugin for Google libphonenumber.
 
 ## :warning: Notice
 
-This plugin only support **Web** for now, and has similar implementation with [libphonenumber](https://pub.dev/packages/libphonenumber).
+This plugin has similar implementation with [libphonenumber](https://pub.dev/packages/libphonenumber).
+
+* This plugin now has support for `Android` and `Web`, `iOS` is still in development **:warning: :construction:**
 
 ## Usage
 
@@ -12,9 +14,13 @@ To use this plugin, add `libphonenumber_plugin: ^any` as a dependency in your pu
 
 :warning: For **Android** and **IOS** usage use [libphonenumber](https://pub.dev/packages/libphonenumber).
 
+* This plugin might merge with the original [libphonenumber](https://pub.dev/packages/libphonenumber) for Flutter in future, for now no info.
+
 ### Android and IOS Usage
 
-This plugin does not support Android and IOS yet use [libphonenumber](https://pub.dev/packages/libphonenumber), since it was inspired by and has similar implementation with [libphonenumber](https://pub.dev/packages/libphonenumber).
+This plugin now supports Android and IOS is still in development **:warning: :construction:**.
+
+For Stable iOS implementation use [libphonenumber](https://pub.dev/packages/libphonenumber), since it was inspired by and has similar implementation with [libphonenumber](https://pub.dev/packages/libphonenumber).
 
 ### Web Usage
 
@@ -55,7 +61,8 @@ For available methods see [libphonenumber_platform_interface](https://pub.dev/pa
 
 ### Future Works :rocket:
   - Support for Windows and MacOS with Dart FFI 
-  - Support for Android and IOS (Unsure)
+  - Support IOS is still in development **:warning: :construction:**
+  - Merge with the original [libphonenumber](https://pub.dev/packages/libphonenumber) for Flutter in future, for now no info.
 
 ## Contributions
 If you encounter any problem or the library is missing a feature feel free to open an issue. Feel free to fork, improve the plugin and make pull request.
