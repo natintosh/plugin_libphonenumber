@@ -1,13 +1,11 @@
 name: libphonenumber_web
 description: The web implementation of libphonenumber
-version: 0.1.1
+version: 0.2.0
 homepage: https://github.com/natintosh/plugin_libphonenumber.git
-
-publish_to: none
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
-  flutter: ">=1.20.0 <2.0.0"
+  flutter: ">=1.20.0"
 
 dependencies:
   flutter:
@@ -16,9 +14,7 @@ dependencies:
     sdk: flutter
 
   js: ^0.6.3
-  # libphonenumber_platform_interface: ^0.2.0
-  libphonenumber_platform_interface:
-    path: ../libphonenumber_platform_interface
+  libphonenumber_platform_interface: ^0.3.0
 
 dev_dependencies:
   flutter_test:
