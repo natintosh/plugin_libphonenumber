@@ -1,4 +1,4 @@
-## 0.20
+## 0.2.0
 * Migrated to Null Safety
 * Change `isValidNumber` to `isValidPhoneNumber`
 
