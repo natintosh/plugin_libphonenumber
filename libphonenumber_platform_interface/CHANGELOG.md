@@ -1,3 +1,7 @@
+## 0.3.0
+ * Migrated to null safety
+ * Change `isValidNumber` to `isValidPhoneNumber`
+ * Update Method Channel `involveMethod`, `isValidNumber` to `isValidPhoneNumber`
 
 ## 0.2.0
  * Updated README.md file
