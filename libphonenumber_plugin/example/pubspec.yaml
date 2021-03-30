@@ -13,8 +13,6 @@ dependencies:
   libphonenumber_plugin:
     path: ../
 
- # libphonenumber: ^2.0.0
-
   cupertino_icons: ^1.0.0
 
 dev_dependencies:

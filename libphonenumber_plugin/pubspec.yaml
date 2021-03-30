@@ -1,6 +1,6 @@
 name: libphonenumber_plugin
 description: Flutter package for Google libphonenumber, for Android and Web. Uses Flutter Federated Package for interoperability.
-version: 0.2.0
+version: 0.2.1
 homepage: https://github.com/natintosh/plugin_libphonenumber.git
 
 environment:

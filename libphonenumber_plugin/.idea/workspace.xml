@@ -26,7 +26,8 @@
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/phone_number_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/phone_number_util.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +50,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../libphonenumber_web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -92,10 +93,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="100" y="100" width="1166" height="568" key="AVDManager/0.0.1366.768@0.0.1366.768" timestamp="1616598635547" />
-    <state x="319" y="139" key="FileChooserDialogImpl" timestamp="1616588690088">
+    <state x="319" y="139" key="FileChooserDialogImpl" timestamp="1616701893053">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="319" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1616588690088" />
+    <state x="319" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1616701893053" />
     <state width="1323" height="609" key="GridCell.Tab.0.bottom" timestamp="1616598993009">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

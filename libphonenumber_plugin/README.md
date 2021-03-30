@@ -6,21 +6,19 @@ Flutter plugin for Google libphonenumber.
 
 This plugin has similar implementation with [libphonenumber](https://pub.dev/packages/libphonenumber).
 
-* This plugin now has support for `Android` and `Web`, `iOS` is still in development **:warning: :construction:**
+* This plugin now has support for `Android`, `iOS` and `Web`,
 
 ## Usage
 
 To use this plugin, add `libphonenumber_plugin: ^any` as a dependency in your pubspec.yaml file. 
 
-:warning: For **Android** and **IOS** usage use [libphonenumber](https://pub.dev/packages/libphonenumber).
+* :warning: This plugin might merge with the original [libphonenumber](https://pub.dev/packages/libphonenumber) for Flutter in future, for now no info.
 
-* This plugin might merge with the original [libphonenumber](https://pub.dev/packages/libphonenumber) for Flutter in future, for now no info.
+### Android and iOS Usage
 
-### Android and IOS Usage
+This plugin now supports Android and iOS.
 
-This plugin now supports Android and IOS is still in development **:warning: :construction:**.
-
-For Stable iOS implementation use [libphonenumber](https://pub.dev/packages/libphonenumber), since it was inspired by and has similar implementation with [libphonenumber](https://pub.dev/packages/libphonenumber).
+* Also For Stable Android and iOS implementation use [libphonenumber](https://pub.dev/packages/libphonenumber), since it was inspired by and has similar implementation with [libphonenumber](https://pub.dev/packages/libphonenumber).
 
 ### Web Usage
 
@@ -37,8 +35,8 @@ In your app directory, edit `web/index.html` to add the following
     
         ...
 
-        <script src="packages/libphonenumber_plugin/js/libphonenumber.js"></script>
-        <script src="packages/libphonenumber_plugin/js/stringbuffer.js"></script>
+        <script src="assets/packages/libphonenumber_plugin/js/libphonenumber.js"></script>
+        <script src="assets/packages/libphonenumber_plugin/js/stringbuffer.js"></script>
 
         ...
 
@@ -60,8 +58,7 @@ or any other source library available later on
 For available methods see [libphonenumber_platform_interface](https://pub.dev/packages/libphonenumber_platform_interface)
 
 ### Future Works :rocket:
-  - Support for Windows and MacOS with Dart FFI 
-  - Support IOS is still in development **:warning: :construction:**
+  - Support for Windows and MacOS with Dart FFI
   - Merge with the original [libphonenumber](https://pub.dev/packages/libphonenumber) for Flutter in future, for now no info.
 
 ## Contributions
