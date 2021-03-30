@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../libphonenumber_web" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/libphonenumber-2.0.0" />
       <root url="file://$PROJECT_DIR$" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/libphonenumber_web-0.2.0" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
