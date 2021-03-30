@@ -9,7 +9,7 @@ class PhoneNumberUtil {
   /// Returns [Future<String>]
   static Future<String?> getNameForNumber(
       String phoneNumber, String isoCode) async {
-    return _platform.getNameForNumber(phoneNumber, isoCode);
+    return await _platform.getNameForNumber(phoneNumber, isoCode);
   }
 
   /// [isValidPhoneNumber] checks if a [phoneNumber] is valid.
@@ -18,7 +18,7 @@ class PhoneNumberUtil {
   static Future<bool?> isValidPhoneNumber(
       String phoneNumber, String isoCode) async {
     try {
-      return _platform.isValidPhoneNumber(phoneNumber, isoCode);
+      return await _platform.isValidPhoneNumber(phoneNumber, isoCode);
     } catch (_) {
       return false;
     }
@@ -29,7 +29,7 @@ class PhoneNumberUtil {
   /// Returns [Future<String>]
   static Future<String?> normalizePhoneNumber(
       String phoneNumber, String isoCode) async {
-    return _platform.normalizePhoneNumber(phoneNumber, isoCode);
+    return await _platform.normalizePhoneNumber(phoneNumber, isoCode);
   }
 
   /// [getRegionInfo] about phone number
@@ -57,6 +57,6 @@ class PhoneNumberUtil {
   /// Returns [Future<String>]
   static Future<String?> formatAsYouType(
       String phoneNumber, String isoCode) async {
-    return _platform.formatAsYouType(phoneNumber, isoCode);
+    return await _platform.formatAsYouType(phoneNumber, isoCode);
   }
 }
