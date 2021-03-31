@@ -1,6 +1,6 @@
 ## 0.2.3
 * Updated dependencies
-* Resolved issue with `RegionInfo.regionPrefix` is alway `null`
+* Resolved issue with `RegionInfo.regionPrefix` is always `null`
 * Replaced `regionPrefix` with `regionCode` in swift file
 
 ## 0.2.2
