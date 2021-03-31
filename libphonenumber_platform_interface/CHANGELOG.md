@@ -1,3 +1,6 @@
+## 0.3.1
+ * Resolved `RegionInfo.regionPrefix` is always `null`
+
 ## 0.3.0
  * Migrated to null safety
  * Change `isValidNumber` to `isValidPhoneNumber`
