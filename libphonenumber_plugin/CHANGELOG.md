@@ -1,3 +1,8 @@
+## 0.2.3
+* Updated dependencies
+* Resolved issue with `RegionInfo.regionPrefix` is alway `null`
+* Replaced `regionPrefix` with `regionCode` in swift file
+
 ## 0.2.2
 * Fixed recurring issue, exception caused by `isValidPhoneNumber` on `Web`
 

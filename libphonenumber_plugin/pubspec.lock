@@ -85,14 +85,14 @@ packages:
       name: libphonenumber_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.3.0"
+    version: "0.3.1"
   libphonenumber_web:
     dependency: "direct main"
     description:
       name: libphonenumber_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.0"
+    version: "0.2.0+1"
   matcher:
     dependency: transitive
     description:

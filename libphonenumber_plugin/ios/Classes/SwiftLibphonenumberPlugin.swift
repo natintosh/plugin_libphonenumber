@@ -94,7 +94,7 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
             let countryCode : String = p.countryCode.stringValue as String
             let formattedNumber : String = try phoneUtils.format(p, numberFormat: NBEPhoneNumberFormat.NATIONAL)
             
-            let data : Dictionary<String, String> = ["isoCode": regionCode, "countryCode" : countryCode, "formattedPhoneNumber" : formattedNumber]
+            let data : Dictionary<String, String> = ["isoCode": regionCode, "regionCode" : countryCode, "formattedPhoneNumber" : formattedNumber]
             
             result(data)
         } catch let error as NSError {
