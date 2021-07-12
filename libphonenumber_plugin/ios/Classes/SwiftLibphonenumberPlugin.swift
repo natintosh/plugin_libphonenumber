@@ -90,11 +90,11 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
         do {
             let p : NBPhoneNumber = try phoneUtils.parse(phoneNumber, defaultRegion: isoCode.uppercased())
             
-            let regionCode : String = phoneUtils.getRegionCode(for: p)
-            let countryCode : String = p.countryCode.stringValue as String
-            let formattedNumber : String = try phoneUtils.format(p, numberFormat: NBEPhoneNumberFormat.NATIONAL)
+            let regionCode : String? = phoneUtils.getRegionCode(for: p)
+            let countryCode : String? = p.countryCode.stringValue as String
+            let formattedNumber : String? = try phoneUtils.format(p, numberFormat: NBEPhoneNumberFormat.NATIONAL)
             
-            let data : Dictionary<String, String> = ["isoCode": regionCode, "regionCode" : countryCode, "formattedPhoneNumber" : formattedNumber]
+            let data : Dictionary<String, String?> = ["isoCode": regionCode, "regionCode" : countryCode, "formattedPhoneNumber" : formattedNumber]
             
             result(data)
         } catch let error as NSError {
