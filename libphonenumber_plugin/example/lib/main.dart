@@ -24,13 +24,16 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> initPlatformState() async {
     try {
-      String phoneNumber = '+2347082286079';
-      String regionCode = 'NG';
+      String phoneNumber = '+212700000000';
+      String regionCode = 'MA';
 
       var formattedNumber =
-          await PhoneNumberUtil.normalizePhoneNumber(phoneNumber, regionCode);
+          await PhoneNumberUtil.formatAsYouType(phoneNumber, regionCode);
+
+      var valid = await PhoneNumberUtil.isValidPhoneNumber(phoneNumber, regionCode);
 
       print('\n\n\n Output ==>> $formattedNumber \n\n\n');
+      print('\n\n\n Output Valid ==>> $valid \n\n\n');
     } on PlatformException catch (e) {
       print('\n\n\n PLATFORM EXCEPTION: \n\n\n $e \n\n\n');
     }

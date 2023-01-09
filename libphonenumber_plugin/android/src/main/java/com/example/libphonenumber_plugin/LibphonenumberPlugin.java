@@ -76,7 +76,7 @@ public class LibphonenumberPlugin implements FlutterPlugin, MethodCallHandler {
 
         try {
             Phonenumber.PhoneNumber p = phoneUtil.parse(phoneNumber, isoCode);
-            result.success(phoneNumberToCarrierMapper.getNameForNumber(p, Locale.getDefault()));
+            result.success(phoneUtil.isValidNumber(p));
         } catch (NumberParseException e) {
             result.error("NumberParseException", e.getMessage(), null);
         }
@@ -88,7 +88,7 @@ public class LibphonenumberPlugin implements FlutterPlugin, MethodCallHandler {
 
         try {
             Phonenumber.PhoneNumber p = phoneUtil.parse(phoneNumber, isoCode);
-            result.success(phoneUtil.isValidNumber(p));
+            result.success(phoneNumberToCarrierMapper.getNameForNumber(p, Locale.getDefault()));
         } catch (NumberParseException e) {
             result.error("NumberParseException", e.getMessage(), null);
         }
