@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
       String regionCode = 'MA';
 
       var formattedNumber =
-          await PhoneNumberUtil.formatAsYouType(phoneNumber, regionCode);
+          await PhoneNumberUtil.getNameForNumber(phoneNumber, regionCode);
 
       var valid = await PhoneNumberUtil.isValidPhoneNumber(phoneNumber, regionCode);
 
