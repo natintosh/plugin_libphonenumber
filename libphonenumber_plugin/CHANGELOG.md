@@ -1,3 +1,10 @@
+## 0.2.5
+* Updated libphonenumber and PhoneNumberToCarrierMapper on Android 
+* Remove dependency on [libphonenumber](https://pub.dev/packages/libphonenumber)
+* Switch from libphonenumber-iOS to PhoneNumberKit on iOS 
+* Update libphonenumber.js file 
+* Depreciating `getNameForNumber` in future updates
+
 ## 0.2.3
 * Updated dependencies
 * Resolved issue with `RegionInfo.regionPrefix` is always `null`
