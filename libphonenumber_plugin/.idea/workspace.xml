@@ -22,21 +22,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ad297e8-2038-4b8c-babe-91c4ef3a37ea" name="Default Changelist" comment="">
+    <list default="true" id="5ad297e8-2038-4b8c-babe-91c4ef3a37ea" name="Default Changelist" comment="&#10;1. Removed dependency on pub.dev libphonenumber from iOS&#10;2. Replaced libphonenumber-iOS to PhoneNumberKit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\oguny\.android\avd\Pixel_3a_API_31.avd]" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ios/Classes/SwiftLibphonenumberPlugin.swift" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/.gitignore" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ios/Classes/SwiftLibphonenumberPlugin.swift" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1mYyfUIeVGb10erR8YfgiL6BZEp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -47,7 +50,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -75,6 +80,28 @@
       <option name="presentableId" value="Default" />
       <updated>1609684921703</updated>
     </task>
+    <task id="LOCAL-00001" summary="&#10;1. Removed dependency on pub.dev libphonenumber&#10;2. Updated Google's Java libphonenumber package to latest">
+      <created>1673246343927</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673246343928</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&#10;1. Removed dependency on pub.dev libphonenumber&#10;2. Updated Google's Java libphonenumber package to latest">
+      <created>1673247826477</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673247826477</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&#10;1. Removed dependency on pub.dev libphonenumber from iOS&#10;2. Replaced libphonenumber-iOS to PhoneNumberKit">
+      <created>1673261438343</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673261438343</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +114,10 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&#10;1. Removed dependency on pub.dev libphonenumber&#10;2. Updated Google's Java libphonenumber package to latest" />
+    <MESSAGE value="&#10;1. Removed dependency on pub.dev libphonenumber from iOS&#10;2. Replaced libphonenumber-iOS to PhoneNumberKit" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;1. Removed dependency on pub.dev libphonenumber from iOS&#10;2. Replaced libphonenumber-iOS to PhoneNumberKit" />
   </component>
 </project>
