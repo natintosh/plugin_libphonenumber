@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
       var formattedNumber =
           await PhoneNumberUtil.formatAsYouType(phoneNumber, regionCode);
 
-      var valid = await PhoneNumberUtil.isValidPhoneNumber(phoneNumber, regionCode);
+      var valid = await PhoneNumberUtil.getRegionInfo(phoneNumber, regionCode);
 
       print('\n\n\n Output ==>> $formattedNumber \n\n\n');
       print('\n\n\n Output Valid ==>> $valid \n\n\n');

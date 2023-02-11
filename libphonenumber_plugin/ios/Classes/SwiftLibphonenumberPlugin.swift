@@ -77,7 +77,14 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
             let p: PhoneNumber = try phoneNumberKit.parse(phoneNumber, withRegion: isoCode.uppercased(), ignoreType: true)
             
             let regionCode: String? = phoneNumberKit.getRegionCode(of: p)
-            let countryCode: String? = phoneNumberKit.mainCountry(forCode: p.countryCode)
+            let countryCode: String?
+            
+            if let prefix = phoneNumberKit.countryCode(for: regionCode ?? "") {
+                countryCode = String(prefix)
+            } else {
+                countryCode = nil
+            }
+            
             let formattedNumber: String? = phoneNumberKit.format(p, toType: PhoneNumberFormat.national)
             
             
