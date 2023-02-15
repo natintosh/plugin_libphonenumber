@@ -25,11 +25,42 @@
     <list default="true" id="08d9f675-7405-413d-9f1d-e721d9af796a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/profile/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/profile/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.metadata" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/caches/build_file_checksums.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/src/main/java/com/example/libphonenumber_plugin/LibphonenumberPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/debug/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/main/kotlin/com/example/example/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/main/res/drawable-v21/launch_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/main/res/values-night/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/profile/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/settings.gradle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
