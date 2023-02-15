@@ -22,36 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ad297e8-2038-4b8c-babe-91c4ef3a37ea" name="Default Changelist" comment="1. Updated updated libphonenumber.js file">
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/method_channel/libhonenumber_method_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/method_channel/libhonenumber_method_channel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/country_code_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/country_code_source.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/phone_number_format.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/phone_number_format.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/phone_number_type.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/phone_number_type.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/short_number_cost.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/short_number_cost.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/example/libphonenumber_plugin/LibphonenumberPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/example/libphonenumber_plugin/LibphonenumberPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/.metadata" beforeDir="false" afterPath="$PROJECT_DIR$/example/.metadata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftLibphonenumberPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftLibphonenumberPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/libphonenumber_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libphonenumber_plugin.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/phone_number_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/phone_number_util.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/lib/src/interop/phonenumberutil_interop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/lib/src/interop/phonenumberutil_interop.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/lib/src/libphonenumber_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/lib/src/libphonenumber_plugin.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/pubspec.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="5ad297e8-2038-4b8c-babe-91c4ef3a37ea" name="Default Changelist" comment="Fix:&#10;&#10;1. Fixed issue with natintosh/intl_phone_number_input#369&#10;&#10;Update:&#10;1. Depreciated getNameForNumber&#10;2. Added getAllCountries&#10;3. Added getFormattedExampleNumber" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673261438343</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix:&#10;&#10;1. Fixed issue with natintosh/intl_phone_number_input#369&#10;&#10;Update:&#10;1. Depreciated getNameForNumber&#10;2. Added getAllCountries&#10;3. Added getFormattedExampleNumber">
+      <created>1676443558735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676443558735</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +116,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&#10;1. Removed dependency on pub.dev libphonenumber&#10;2. Updated Google's Java libphonenumber package to latest" />
     <MESSAGE value="&#10;1. Removed dependency on pub.dev libphonenumber from iOS&#10;2. Replaced libphonenumber-iOS to PhoneNumberKit" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;1. Removed dependency on pub.dev libphonenumber from iOS&#10;2. Replaced libphonenumber-iOS to PhoneNumberKit" />
+    <MESSAGE value="Fix:&#10;&#10;1. Fixed issue with natintosh/intl_phone_number_input#369&#10;&#10;Update:&#10;1. Depreciated getNameForNumber&#10;2. Added getAllCountries&#10;3. Added getFormattedExampleNumber" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix:&#10;&#10;1. Fixed issue with natintosh/intl_phone_number_input#369&#10;&#10;Update:&#10;1. Depreciated getNameForNumber&#10;2. Added getAllCountries&#10;3. Added getFormattedExampleNumber" />
   </component>
 </project>
