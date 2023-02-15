@@ -35,78 +35,27 @@
 /// };
 
 enum PhoneNumberType {
-  FIXED_LINE, // : 0,
-  MOBILE, //: 1,
-  FIXED_LINE_OR_MOBILE, //: 2,
-  TOLL_FREE, //: 3,
-  PREMIUM_RATE, //: 4,
-  SHARED_COST, //: 5,
-  VOIP, //: 6,
-  PERSONAL_NUMBER, //: 7,
-  PAGER, //: 8,
-  UAN, //: 9,
-  VOICEMAIL, //: 10,
-  UNKNOWN, //: -1
-}
+  FIXED_LINE(value: 0), // : 0,
+  MOBILE(value: 1), //: 1,
+  FIXED_LINE_OR_MOBILE(value: 2), //: 2,
+  TOLL_FREE(value: 3), //: 3,
+  PREMIUM_RATE(value: 4), //: 4,
+  SHARED_COST(value: 5), //: 5,
+  VOIP(value: 6), //: 6,
+  PERSONAL_NUMBER(value: 7), //: 7,
+  PAGER(value: 8), //: 8,
+  UAN(value: 9), //: 9,
+  VOICEMAIL(value: 10), //: 10,
+  UNKNOWN(value: -1); //: -1
 
-class PhoneNumberTypeUtil {
-  static PhoneNumberType getType(int? value) {
-    switch (value) {
-      case 0:
-        return PhoneNumberType.FIXED_LINE;
-      case 1:
-        return PhoneNumberType.MOBILE;
-      case 2:
-        return PhoneNumberType.FIXED_LINE_OR_MOBILE;
-      case 3:
-        return PhoneNumberType.TOLL_FREE;
-      case 4:
-        return PhoneNumberType.PREMIUM_RATE;
-      case 5:
-        return PhoneNumberType.SHARED_COST;
-      case 6:
-        return PhoneNumberType.VOIP;
-      case 7:
-        return PhoneNumberType.PERSONAL_NUMBER;
-      case 8:
-        return PhoneNumberType.PAGER;
-      case 9:
-        return PhoneNumberType.UAN;
-      case 10:
-        return PhoneNumberType.VOICEMAIL;
-      default:
-        return PhoneNumberType.UNKNOWN;
-    }
-  }
-}
+  const PhoneNumberType({required this.value});
 
-extension phonenumbertypeproperties on PhoneNumberType {
-  int get value {
-    switch (this) {
-      case PhoneNumberType.FIXED_LINE:
-        return 0;
-      case PhoneNumberType.MOBILE:
-        return 1;
-      case PhoneNumberType.FIXED_LINE_OR_MOBILE:
-        return 2;
-      case PhoneNumberType.TOLL_FREE:
-        return 3;
-      case PhoneNumberType.PREMIUM_RATE:
-        return 4;
-      case PhoneNumberType.SHARED_COST:
-        return 5;
-      case PhoneNumberType.VOIP:
-        return 6;
-      case PhoneNumberType.PERSONAL_NUMBER:
-        return 7;
-      case PhoneNumberType.PREMIUM_RATE:
-        return 8;
-      case PhoneNumberType.UAN:
-        return 9;
-      case PhoneNumberType.VOICEMAIL:
-        return 10;
-      default:
-        return -1;
-    }
+  final int value;
+
+  static PhoneNumberType fromIndex(int? index) {
+    return PhoneNumberType.values.singleWhere(
+      (element) => element.value == index,
+      orElse: () => PhoneNumberType.UNKNOWN,
+    );
   }
 }

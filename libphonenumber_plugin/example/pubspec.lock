@@ -83,10 +83,9 @@ packages:
   libphonenumber_platform_interface:
     dependency: transitive
     description:
-      name: libphonenumber_platform_interface
-      sha256: "977834b022bcc25e6e68bd86f977f10bbf20eec6bfab1ae7a151e51868ab91cf"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../libphonenumber_platform_interface"
+      relative: true
+    source: path
     version: "0.3.1"
   libphonenumber_plugin:
     dependency: "direct main"
@@ -98,10 +97,9 @@ packages:
   libphonenumber_web:
     dependency: transitive
     description:
-      name: libphonenumber_web
-      sha256: f938f3d21d2d208897a361b8ca9052dfd29f956a30ced76fda8b45744dad20cb
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../libphonenumber_web"
+      relative: true
+    source: path
     version: "0.2.0+1"
   matcher:
     dependency: transitive

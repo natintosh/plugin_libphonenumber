@@ -5,7 +5,7 @@ import PhoneNumberKit
 public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
     
     let phoneNumberKit: PhoneNumberKit = PhoneNumberKit()
-        
+    
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "plugin.libphonenumber", binaryMessenger: registrar.messenger())
         
@@ -30,8 +30,11 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
         case "formatAsYouType":
             formatAsYouType(call: call, result: result)
             break
-        case "getNameForNumber":
-            getNameForNumber(call: call, result: result)
+        case "getAllCountries":
+            getAllCountries(call: call, result: result)
+            break
+        case "getFormattedExampleNumber":
+            getFormattedExampleNumber(call: call, result: result)
             break
         default:
             result(FlutterMethodNotImplemented)
@@ -106,34 +109,9 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
             
             let t: PhoneNumberType = p.type
             
-            switch t {
-            case .fixedLine:
-                result(0)
-            case .mobile:
-                result(1)
-            case .fixedOrMobile:
-                result(2)
-            case .tollFree:
-                result(3)
-            case .premiumRate:
-                result(4)
-            case .sharedCost:
-                result(5)
-            case .voip:
-                result(6)
-            case .personalNumber:
-                result(7)
-            case .pager:
-                result(8)
-            case .uan:
-                result(9)
-            case .voicemail:
-                result(10)
-            case .unknown:
-                result(-1)
-            case .notParsed:
-                result(-1)
-            }
+            let index: Int = getIndexFor(phoneNumberType: t)
+            
+            result(index)
         } catch let error as NSError {
             result(FlutterError(code: "\(error.code)", message: error.localizedDescription, details: nil))
         }
@@ -152,13 +130,113 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
         result(formattedNumber)
     }
     
-    // TODO: Depreciated.
-    // There is no valid way to get carrier information on iOS
-    func getNameForNumber(call: FlutterMethodCall, result: @escaping FlutterResult) {
-        let arguments = call.arguments as! Dictionary<String, Any>
-        let phoneNumber = arguments["phoneNumber"] as! String
-        let isoCode = arguments["isoCode"] as! String
+    func getAllCountries(call: FlutterMethodCall, result: @escaping FlutterResult) {
+        let allCountries = phoneNumberKit.allCountries().filter {
+            $0.rangeOfCharacter(from: CharacterSet.letters.inverted) == nil
+        }
         
-        result(FlutterMethodNotImplemented)
+        result(allCountries)
+    }
+    
+    func getFormattedExampleNumber(call: FlutterMethodCall, result: @escaping FlutterResult) {
+        let arguments = call.arguments as! Dictionary<String, Any>
+        
+        let isoCode = arguments["isoCode"] as! String
+        let type = arguments["type"] as! Int
+        let format = arguments["format"] as! Int
+        
+        let phoneNumberType = getPhoneNumberTypeFor(index: type)
+        
+        let phoneNumberFormat = getPhoneNumberFormatFor(index: format)
+        
+        let formattedExampleNumber = phoneNumberKit.getFormattedExampleNumber(forCountry: isoCode, ofType: phoneNumberType, withFormat: phoneNumberFormat, withPrefix: true)
+        
+        
+        result(formattedExampleNumber)
+    }
+}
+
+public extension SwiftLibphonenumberPlugin {
+    
+    private func getIndexFor(phoneNumberFormat format: PhoneNumberFormat) -> Int {
+        switch format {
+        case .e164:
+            return 0
+        case .international:
+            return 1
+        case .national:
+            return 2
+        }
+    }
+    
+    private func getPhoneNumberFormatFor(index format: Int) -> PhoneNumberFormat {
+        switch format {
+        case 0:
+            return .e164
+        case 1:
+            return .international
+        case 2:
+            return .national
+        default:
+            return .e164
+        }
+    }
+    
+    private func getIndexFor(phoneNumberType type: PhoneNumberType) -> Int {
+        switch type {
+        case .fixedLine:
+            return 0
+        case .mobile:
+            return 1
+        case .fixedOrMobile:
+            return 2
+        case .tollFree:
+            return 3
+        case .premiumRate:
+            return 4
+        case .sharedCost:
+            return 5
+        case .voip:
+            return 6
+        case .personalNumber:
+            return 7
+        case .pager:
+            return 8
+        case .uan:
+            return 9
+        case .voicemail:
+            return 10
+        default:
+            return -1
+        }
+    }
+    
+    private func getPhoneNumberTypeFor(index type: Int) -> PhoneNumberType {
+        switch type {
+        case 0:
+            return .fixedLine
+        case 1:
+            return .mobile
+        case 2:
+            return .fixedOrMobile
+        case 3:
+            return .tollFree
+        case 4:
+            return .premiumRate
+        case 5:
+            return .sharedCost
+        case 6:
+            return .voip
+        case 7:
+            return .personalNumber
+        case 8:
+            return .pager
+        case 9:
+            return .unknown
+        case 10:
+            return .voicemail
+        default:
+            return .unknown
+        }
     }
 }

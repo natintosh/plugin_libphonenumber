@@ -4,13 +4,18 @@ import androidx.annotation.NonNull;
 
 import com.google.i18n.phonenumbers.AsYouTypeFormatter;
 import com.google.i18n.phonenumbers.NumberParseException;
-import com.google.i18n.phonenumbers.PhoneNumberToCarrierMapper;
 import com.google.i18n.phonenumbers.PhoneNumberUtil;
-import com.google.i18n.phonenumbers.Phonenumber;
+import com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat;
+import com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType;
+import com.google.i18n.phonenumbers.Phonenumber.PhoneNumber;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Set;
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.MethodCall;
@@ -29,8 +34,6 @@ public class LibphonenumberPlugin implements FlutterPlugin, MethodCallHandler {
     private MethodChannel channel;
 
     private static final PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance();
-    private static final PhoneNumberToCarrierMapper phoneNumberToCarrierMapper = PhoneNumberToCarrierMapper.getInstance();
-
 
     @Override
     public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
@@ -49,9 +52,6 @@ public class LibphonenumberPlugin implements FlutterPlugin, MethodCallHandler {
             case "isValidPhoneNumber":
                 handleIsValidPhoneNumber(call, result);
                 break;
-            case "getNameForNumber":
-                handleGetNameForNumber(call, result);
-                break;
             case "normalizePhoneNumber":
                 handleNormalizePhoneNumber(call, result);
                 break;
@@ -64,6 +64,12 @@ public class LibphonenumberPlugin implements FlutterPlugin, MethodCallHandler {
             case "formatAsYouType":
                 handleFormatAsYouType(call, result);
                 break;
+            case "getAllCountries":
+                handleGetAllCountries(result);
+                break;
+            case "getFormattedExampleNumber":
+                handleGetFormattedExampleNumber(call, result);
+                break;
             default:
                 result.notImplemented();
                 break;
@@ -75,20 +81,8 @@ public class LibphonenumberPlugin implements FlutterPlugin, MethodCallHandler {
         String isoCode = call.argument("isoCode");
 
         try {
-            Phonenumber.PhoneNumber p = phoneUtil.parse(phoneNumber, isoCode);
+            PhoneNumber p = phoneUtil.parse(phoneNumber, isoCode);
             result.success(phoneUtil.isValidNumber(p));
-        } catch (NumberParseException e) {
-            result.error("NumberParseException", e.getMessage(), null);
-        }
-    }
-
-    private void handleGetNameForNumber(MethodCall call, Result result) {
-        String phoneNumber = call.argument("phoneNumber");
-        String isoCode = call.argument("isoCode");
-
-        try {
-            Phonenumber.PhoneNumber p = phoneUtil.parse(phoneNumber, isoCode);
-            result.success(phoneNumberToCarrierMapper.getNameForNumber(p, Locale.getDefault()));
         } catch (NumberParseException e) {
             result.error("NumberParseException", e.getMessage(), null);
         }
@@ -99,7 +93,7 @@ public class LibphonenumberPlugin implements FlutterPlugin, MethodCallHandler {
         String isoCode = call.argument("isoCode");
 
         try {
-            Phonenumber.PhoneNumber p = phoneUtil.parse(phoneNumber, isoCode);
+            PhoneNumber p = phoneUtil.parse(phoneNumber, isoCode);
             final String normalized = phoneUtil.format(p, PhoneNumberUtil.PhoneNumberFormat.E164);
             result.success(normalized);
         } catch (NumberParseException e) {
@@ -112,7 +106,7 @@ public class LibphonenumberPlugin implements FlutterPlugin, MethodCallHandler {
         String isoCode = call.argument("isoCode");
 
         try {
-            Phonenumber.PhoneNumber p = phoneUtil.parse(phoneNumber, isoCode);
+            PhoneNumber p = phoneUtil.parse(phoneNumber, isoCode);
             String regionCode = phoneUtil.getRegionCodeForNumber(p);
             String countryCode = String.valueOf(p.getCountryCode());
             String formattedNumber = phoneUtil.format(p, PhoneNumberUtil.PhoneNumberFormat.NATIONAL);
@@ -131,47 +125,11 @@ public class LibphonenumberPlugin implements FlutterPlugin, MethodCallHandler {
         String phoneNumber = call.argument("phoneNumber");
         String isoCode = call.argument("isoCode");
         try {
-            Phonenumber.PhoneNumber p = phoneUtil.parse(phoneNumber, isoCode);
-            PhoneNumberUtil.PhoneNumberType t = phoneUtil.getNumberType(p);
+            PhoneNumber p = phoneUtil.parse(phoneNumber, isoCode);
+            PhoneNumberType t = phoneUtil.getNumberType(p);
 
-            switch (t) {
-                case FIXED_LINE:
-                    result.success(0);
-                    break;
-                case MOBILE:
-                    result.success(1);
-                    break;
-                case FIXED_LINE_OR_MOBILE:
-                    result.success(2);
-                    break;
-                case TOLL_FREE:
-                    result.success(3);
-                    break;
-                case PREMIUM_RATE:
-                    result.success(4);
-                    break;
-                case SHARED_COST:
-                    result.success(5);
-                    break;
-                case VOIP:
-                    result.success(6);
-                    break;
-                case PERSONAL_NUMBER:
-                    result.success(7);
-                    break;
-                case PAGER:
-                    result.success(8);
-                    break;
-                case UAN:
-                    result.success(9);
-                    break;
-                case VOICEMAIL:
-                    result.success(10);
-                    break;
-                case UNKNOWN:
-                    result.success(-1);
-                    break;
-            }
+            int index = getIndexForPhoneNumberType(t);
+            result.success(index);
         } catch (NumberParseException e) {
             result.error("NumberParseException", e.getMessage(), null);
         }
@@ -188,5 +146,98 @@ public class LibphonenumberPlugin implements FlutterPlugin, MethodCallHandler {
         }
 
         result.success(data);
+    }
+
+    private void handleGetAllCountries(Result result) {
+        final List<String> allCountries = new ArrayList<>(phoneUtil.getSupportedRegions());
+        Collections.sort(allCountries);
+
+        result.success(allCountries);
+    }
+
+    private void handleGetFormattedExampleNumber(MethodCall call, Result result) {
+        String isoCode = call.argument("isoCode");
+        int type = call.argument("type");
+        int format = call.argument("format");
+
+        PhoneNumberType phoneNumberType = getPhoneNumberTypeForIndex(type);
+        PhoneNumberFormat phoneNumberFormat = getPhoneNumberFormatForIndex(format);
+
+        PhoneNumber exampleNumber = phoneUtil.getExampleNumberForType(isoCode, phoneNumberType);
+        String formattedPhoneNumber = phoneUtil.format(exampleNumber, phoneNumberFormat);
+
+        result.success(formattedPhoneNumber);
+    }
+
+    private PhoneNumberFormat getPhoneNumberFormatForIndex(int index) {
+        switch (index) {
+            case 1:
+                return PhoneNumberFormat.INTERNATIONAL;
+            case 2:
+                return PhoneNumberFormat.NATIONAL;
+            case 3:
+                return PhoneNumberFormat.RFC3966;
+            case 0:
+            default:
+                return PhoneNumberFormat.E164;
+        }
+    }
+
+    private PhoneNumberType getPhoneNumberTypeForIndex(int index) {
+        switch (index) {
+            case 0:
+                return PhoneNumberType.FIXED_LINE;
+            case 1:
+                return PhoneNumberType.MOBILE;
+            case 2:
+                return PhoneNumberType.FIXED_LINE_OR_MOBILE;
+            case 3:
+                return PhoneNumberType.TOLL_FREE;
+            case 4:
+                return PhoneNumberType.PREMIUM_RATE;
+            case 5:
+                return PhoneNumberType.SHARED_COST;
+            case 6:
+                return PhoneNumberType.VOIP;
+            case 7:
+                return PhoneNumberType.PERSONAL_NUMBER;
+            case 8:
+                return PhoneNumberType.PAGER;
+            case 9:
+                return PhoneNumberType.UAN;
+            case 10:
+                return PhoneNumberType.VOICEMAIL;
+            default:
+                return PhoneNumberType.UNKNOWN;
+        }
+    }
+
+    private int getIndexForPhoneNumberType(PhoneNumberType type) {
+        switch (type) {
+            case FIXED_LINE:
+                return 0;
+            case MOBILE:
+                return 1;
+            case FIXED_LINE_OR_MOBILE:
+                return 2;
+            case TOLL_FREE:
+                return 3;
+            case PREMIUM_RATE:
+                return 4;
+            case SHARED_COST:
+                return 5;
+            case VOIP:
+                return 6;
+            case PERSONAL_NUMBER:
+                return 7;
+            case PAGER:
+                return 8;
+            case UAN:
+                return 9;
+            case VOICEMAIL:
+                return 10;
+            default:
+                return -1;
+        }
     }
 }

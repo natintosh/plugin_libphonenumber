@@ -1,5 +1,5 @@
 import 'package:flutter/services.dart';
-import 'package:libphonenumber_platform_interface/src/libphonenumber_platform.dart';
+import 'package:libphonenumber_platform_interface/libphonenumber_platform_interface.dart';
 
 class MethodChannelLibPhoneNumber extends LibPhoneNumberPlatform {
   MethodChannel methodChannel = MethodChannel('plugin.libphonenumber');
@@ -8,15 +8,6 @@ class MethodChannelLibPhoneNumber extends LibPhoneNumberPlatform {
   Future<String?> formatAsYouType(String phoneNumber, String isoCode) async {
     return await methodChannel
         .invokeMethod<String>('formatAsYouType', <String, dynamic>{
-      'phoneNumber': phoneNumber,
-      'isoCode': isoCode,
-    });
-  }
-
-  @override
-  Future<String?> getNameForNumber(String phoneNumber, String isoCode) async {
-    return await methodChannel
-        .invokeMethod<String>('getNameForNumber', <String, dynamic>{
       'phoneNumber': phoneNumber,
       'isoCode': isoCode,
     });
@@ -57,6 +48,22 @@ class MethodChannelLibPhoneNumber extends LibPhoneNumberPlatform {
         .invokeMethod<String>('normalizePhoneNumber', <String, dynamic>{
       'phoneNumber': phoneNumber,
       'isoCode': isoCode,
+    });
+  }
+
+  @override
+  Future<List<String>?> getAllCountries() async {
+    return await methodChannel.invokeListMethod<String>('getAllCountries');
+  }
+
+  @override
+  Future<String?> getFormattedExampleNumber(
+      String isoCode, PhoneNumberType type, PhoneNumberFormat format) async {
+    return await methodChannel
+        .invokeMethod<String>('getFormattedExampleNumber', <String, dynamic>{
+      'isoCode': isoCode,
+      'type': type.value,
+      'format': format.value,
     });
   }
 }

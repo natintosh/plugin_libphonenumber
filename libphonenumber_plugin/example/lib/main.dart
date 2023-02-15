@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
   Future<void> initPlatformState() async {
     try {
       String phoneNumber = '+212700000000';
-      String regionCode = 'MA';
+      String regionCode = 'US';
 
       var formattedNumber =
           await PhoneNumberUtil.formatAsYouType(phoneNumber, regionCode);
@@ -34,6 +34,14 @@ class _MyAppState extends State<MyApp> {
 
       print('\n\n\n Output ==>> $formattedNumber \n\n\n');
       print('\n\n\n Output Valid ==>> $valid \n\n\n');
+
+      var countries = await PhoneNumberUtil.getAllCountries();
+
+      var exampleNumber = await PhoneNumberUtil.getFormattedExampleNumber(regionCode, PhoneNumberType.MOBILE, PhoneNumberFormat.INTERNATIONAL);
+
+
+      print('\n\n\n Output Countries ==>> $countries \n\n\n');
+      print('\n\n\n Output Example Number ==>> $exampleNumber \n\n\n');
     } on PlatformException catch (e) {
       print('\n\n\n PLATFORM EXCEPTION: \n\n\n $e \n\n\n');
     }

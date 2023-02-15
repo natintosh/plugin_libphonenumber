@@ -1,3 +1,4 @@
+import 'package:libphonenumber_platform_interface/libphonenumber_platform_interface.dart';
 import 'package:libphonenumber_platform_interface/src/method_channel/libhonenumber_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
@@ -13,10 +14,6 @@ abstract class LibPhoneNumberPlatform extends PlatformInterface {
   static set instance(LibPhoneNumberPlatform instance) {
     PlatformInterface.verifyToken(instance, _token);
     _instance = instance;
-  }
-
-  Future<String?> getNameForNumber(String phoneNumber, String isoCode) async {
-    throw UnimplementedError('getNameForNumber() has not been implemented.');
   }
 
   Future<bool?> isValidPhoneNumber(String phoneNumber, String isoCode) async {
@@ -40,5 +37,15 @@ abstract class LibPhoneNumberPlatform extends PlatformInterface {
 
   Future<String?> formatAsYouType(String phoneNumber, String isoCode) async {
     throw UnimplementedError('formatAsYouType() has not been implemented.');
+  }
+
+  Future<List<String>?> getAllCountries() async {
+    throw UnimplementedError('getAllCountries() has not been implemented.');
+  }
+
+  Future<String?> getFormattedExampleNumber(
+      String isoCode, PhoneNumberType type, PhoneNumberFormat format) async {
+    throw UnimplementedError(
+        'getFormattedExampleNumber() has not been implemented.');
   }
 }
