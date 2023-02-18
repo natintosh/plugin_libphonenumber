@@ -23,25 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0c6e94d-2f5f-4542-b8a7-c0ce23235f89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/libphonenumber_platform_interface_method_channel_test.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.metadata" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.metadata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/caches/build_file_checksums.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/android/src/main/java/com/example/libphonenumber_plugin/LibphonenumberPlugin.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/build.gradle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/android/app/src/debug/AndroidManifest.xml" beforeDir="false" />
@@ -85,9 +69,27 @@
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nathaniel.ogunye/StudioProjects/plugin_libphonenumber/libphonenumber_platform_interface/test&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="tests in libphonenumber_platform_interface_method_channel_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/test/libphonenumber_platform_interface_method_channel_test.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.tests in libphonenumber_platform_interface_method_channel_test.dart" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
