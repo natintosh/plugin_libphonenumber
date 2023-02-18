@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:libphonenumber_platform_interface/libphonenumber_platform_interface.dart';
 import 'package:libphonenumber_web/src/interop/libphonenumber_interop.dart';
