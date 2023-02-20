@@ -50,7 +50,6 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
         let isValid: Bool = phoneNumberKit.isValidPhoneNumber(phoneNumber, withRegion: isoCode.uppercased(), ignoreType: true)
         
         result(isValid)
-        
     }
     
     
@@ -60,7 +59,7 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
         let isoCode = arguments["isoCode"] as! String
         
         do {
-            let p: PhoneNumber = try phoneNumberKit.parse(phoneNumber, withRegion: isoCode.uppercased(), ignoreType: true)
+            let p: PhoneNumber = try parsePhoneNumber(phoneNumber, withRegion: isoCode.uppercased(), ignoreType: true)
             
             let normalized: String = phoneNumberKit.format(p, toType: PhoneNumberFormat.e164)
             
@@ -77,7 +76,7 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
         
         do {
             
-            let p: PhoneNumber = try phoneNumberKit.parse(phoneNumber, withRegion: isoCode.uppercased(), ignoreType: true)
+            let p: PhoneNumber = try parsePhoneNumber(phoneNumber, withRegion: isoCode.uppercased(), ignoreType: true)
             
             let regionCode: String? = phoneNumberKit.getRegionCode(of: p)
             let countryCode: String?
@@ -105,7 +104,7 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
         let isoCode = arguments["isoCode"] as! String
         
         do {
-            let p: PhoneNumber = try phoneNumberKit.parse(phoneNumber, withRegion: isoCode.uppercased(), ignoreType: false)
+            let p: PhoneNumber = try parsePhoneNumber(phoneNumber, withRegion: isoCode.uppercased(), ignoreType: false)
             
             let t: PhoneNumberType = p.type
             
@@ -157,6 +156,18 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
 }
 
 public extension SwiftLibphonenumberPlugin {
+    
+    private func parsePhoneNumber(_ phonenumber: String, withRegion regionCode: String, ignoreType: Bool = true) throws -> PhoneNumber {
+        do {
+            if (regionCode.isEmpty == false) {
+                return try phoneNumberKit.parse(phonenumber, withRegion: regionCode, ignoreType: ignoreType)
+            } else {
+                return try phoneNumberKit.parse(phonenumber, ignoreType: ignoreType)
+            }
+        } catch {
+          throw error
+        }
+    }
     
     private func getIndexFor(phoneNumberFormat format: PhoneNumberFormat) -> Int {
         switch format {

@@ -22,26 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d9f675-7405-413d-9f1d-e721d9af796a" name="Default Changelist" comment="Remove dart:develop">
-      <change afterPath="$PROJECT_DIR$/integration_test/app_test.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_driver/integration_test.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icons/Icon-192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icons/Icon-512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icons/Icon-maskable-192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icons/Icon-maskable-512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/libphonenumber.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/stringbuffer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/manifest.json" afterDir="false" />
+    <list default="true" id="08d9f675-7405-413d-9f1d-e721d9af796a" name="Default Changelist" comment="Completed integration test for libphonenumber_web">
+      <change afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/integration_test/app_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/test_driver/integration_test.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/test/libphonenumber_plugin_method_channel_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/test/libphonenumber_plugin_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/test/libphonenumber_plugin_test.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libphonenumber_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libphonenumber_web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +109,14 @@
       <option name="presentableId" value="Default" />
       <updated>1616239417445</updated>
     </task>
+    <task id="LOCAL-00001" summary="Completed integration test for libphonenumber_web">
+      <created>1676827496749</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676827496749</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,5 +129,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Completed integration test for libphonenumber_web" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed integration test for libphonenumber_web" />
   </component>
 </project>

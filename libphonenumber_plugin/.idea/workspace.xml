@@ -23,30 +23,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ad297e8-2038-4b8c-babe-91c4ef3a37ea" name="Default Changelist" comment="Fix:&#10;&#10;1. Fixed issue with natintosh/intl_phone_number_input#369&#10;&#10;Update:&#10;1. Depreciated getNameForNumber&#10;2. Added getAllCountries&#10;3. Added getFormattedExampleNumber">
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/integration_test/app_test.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/test_driver/integration_test.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/web/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/web/icons/Icon-192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/web/icons/Icon-512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/web/icons/Icon-maskable-192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/web/icons/Icon-maskable-512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/web/js/libphonenumber.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/web/js/stringbuffer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_web/web/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/integration_test/app_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/test_driver/integration_test.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftLibphonenumberPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftLibphonenumberPlugin.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/libphonenumber_plugin_method_channel_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/libphonenumber_plugin_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/libphonenumber_plugin_test.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/libphonenumber_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/libphonenumber_web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -64,15 +65,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "/Users/nathaniel.ogunye/StudioProjects/plugin_libphonenumber/libphonenumber_plugin/example",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/example" />
+    </key>
+  </component>
   <component name="RunManager" selected="Flutter.example/lib/main.dart">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
