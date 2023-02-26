@@ -24,11 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ad297e8-2038-4b8c-babe-91c4ef3a37ea" name="Default Changelist" comment="Fix:&#10;&#10;1. Fixed issue with natintosh/intl_phone_number_input#369&#10;&#10;Update:&#10;1. Depreciated getNameForNumber&#10;2. Added getAllCountries&#10;3. Added getFormattedExampleNumber">
       <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libphonenumber_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libphonenumber_plugin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/libphonenumber_plugin_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/libphonenumber_plugin_test.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
