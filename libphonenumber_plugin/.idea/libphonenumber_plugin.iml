@@ -19,6 +19,15 @@
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/libphonenumber_plugin/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/libphonenumber_plugin/build" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/libphonenumber_plugin/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/integration_test/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/integration_test/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/integration_test/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/integration_test/integration_test_macos/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/integration_test/integration_test_macos/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/integration_test/integration_test_macos/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/integration_test/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/integration_test/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/integration_test/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
