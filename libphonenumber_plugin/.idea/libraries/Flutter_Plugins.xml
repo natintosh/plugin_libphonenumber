@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../libphonenumber_web" />
       <root url="file://$PROJECT_DIR$" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/libphonenumber_web-0.2.0+1" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

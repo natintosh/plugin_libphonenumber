@@ -22,25 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d9f675-7405-413d-9f1d-e721d9af796a" name="Default Changelist" comment="Completed integration test for libphonenumber_web">
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.pubignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/analysis_options.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/example/example.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/method_channel/libhonenumber_method_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/method_channel/libhonenumber_method_channel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/classes/region_info.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/classes/region_info.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/country_code_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/country_code_source.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/phone_number_format.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/phone_number_format.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/phone_number_type.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/phone_number_type.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/short_number_cost.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/short_number_cost.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/lib/src/phone_number_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/lib/src/phone_number_util.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="08d9f675-7405-413d-9f1d-e721d9af796a" name="Default Changelist" comment="Completed integration test for libphonenumber_web" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
