@@ -23,16 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08d9f675-7405-413d-9f1d-e721d9af796a" name="Default Changelist" comment="Completed integration test for libphonenumber_web">
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/integration_test/app_test.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/test_driver/integration_test.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libphonenumber_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libphonenumber_plugin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/test/libphonenumber_plugin_method_channel_test.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/test/libphonenumber_plugin_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/test/libphonenumber_plugin_test.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>

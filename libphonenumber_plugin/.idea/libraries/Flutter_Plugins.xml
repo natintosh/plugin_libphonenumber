@@ -3,7 +3,6 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../libphonenumber_web" />
       <root url="file://$PROJECT_DIR$" />
-      <root url="file://$USER_HOME$/fvm/versions/stable/packages/integration_test" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
