@@ -1,0 +1,14 @@
+# .github/workflows/publish.yml
+name: Publish Libphonenumber Platform interface to pub.dev
+
+on:
+  push:
+    tags:
+    - 'libphonenumber_platform_interface-v[0-9]+.[0-9]+.[0-9]+*'
+
+# Publish using the reusable workflow from dart-lang.
+jobs:
+  publish:
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      working-directory: libphonenumber_platform_interface/
