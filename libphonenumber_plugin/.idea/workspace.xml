@@ -23,8 +23,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ad297e8-2038-4b8c-babe-91c4ef3a37ea" name="Default Changelist" comment="Fix:&#10;&#10;1. Fixed issue with natintosh/intl_phone_number_input#369&#10;&#10;Update:&#10;1. Depreciated getNameForNumber&#10;2. Added getAllCountries&#10;3. Added getFormattedExampleNumber">
+      <change afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.pubignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/example/example.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/method_channel/libhonenumber_method_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/method_channel/libhonenumber_method_channel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/classes/region_info.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/classes/region_info.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/country_code_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/country_code_source.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/phone_number_format.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/phone_number_format.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/phone_number_type.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/phone_number_type.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/short_number_cost.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/utils/enums/short_number_cost.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/phone_number_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/phone_number_util.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 ///
 /// * Enumeration CountryCodeSource.
 /// * @enum {number}
@@ -16,14 +18,14 @@ enum CountryCodeSource {
   FROM_NUMBER_WITH_IDD(value: 5),
   FROM_NUMBER_WITHOUT_PLUS_SIGN(value: 10),
   FROM_DEFAULT_COUNTRY(value: 20);
-  
+
   const CountryCodeSource({required this.value});
-  
+
   final int value;
 
   static CountryCodeSource fromIndex(int? index) {
     return CountryCodeSource.values.singleWhere(
-          (element) => element.value == index,
+      (element) => element.value == index,
       orElse: () => CountryCodeSource.UNSPECIFIED,
     );
   }

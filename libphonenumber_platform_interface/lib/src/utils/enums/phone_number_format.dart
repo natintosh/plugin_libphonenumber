@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 /// /**
 ///  * INTERNATIONAL and NATIONAL formats are consistent with the definition in
 ///  * ITU-T Recommendation E123. However we follow local conventions such as

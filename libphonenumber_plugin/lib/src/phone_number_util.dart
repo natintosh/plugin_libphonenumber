@@ -36,7 +36,7 @@ class PhoneNumberUtil {
     return RegionInfo.fromJson(response);
   }
 
-  /// [getNameForNumber] get type of phone number
+  /// [getNumberType] get type of phone number
   /// Accepts [phoneNumber] and [isoCode]
   /// Returns [Future<PhoneNumberType>] type of phone number
   static Future<PhoneNumberType> getNumberType(

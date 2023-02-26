@@ -114,9 +114,10 @@ packages:
   libphonenumber_platform_interface:
     dependency: "direct main"
     description:
-      path: "../libphonenumber_platform_interface"
-      relative: true
-    source: path
+      name: libphonenumber_platform_interface
+      sha256: "977834b022bcc25e6e68bd86f977f10bbf20eec6bfab1ae7a151e51868ab91cf"
+      url: "https://pub.dev"
+    source: hosted
     version: "0.3.1"
   matcher:
     dependency: transitive
