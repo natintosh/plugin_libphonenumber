@@ -1,3 +1,10 @@
+## 0.3.0
+*  Removed getNameForNumber
+*  Added getAllCountries
+*  Added getFormattedExampleNumber
+*  Added Test
+*  Improve quality of code
+
 ## 0.2.5
 * Updated libphonenumber and PhoneNumberToCarrierMapper on Android 
 * Remove dependency on [libphonenumber](https://pub.dev/packages/libphonenumber)
