@@ -19,4 +19,4 @@ jobs:
         cd $GITHUB_WORKSPACE
     - uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
       with:
-        working-directory: libphonenumber_platform_interface/
+       working-directory: libphonenumber_platform_interface/
