@@ -22,6 +22,6 @@ jobs:
         run: flutter pub get
         working-directory: libphonenumber_platform_interface/
       - name: Publish
-        run: flutter pub publish
+        run: flutter pub publish -f
         working-directory: libphonenumber_platform_interface/
 
