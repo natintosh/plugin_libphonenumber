@@ -9,6 +9,15 @@ on:
 # Publish using the reusable workflow from dart-lang.
 jobs:
   publish:
-    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
-    with:
-      working-directory: libphonenumber_platform_interface/
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Install Flutter"
+      run: |
+        cd $HOME
+        git clone https://github.com/flutter/flutter.git --depth 1 -b stable _flutter
+        echo "$HOME/_flutter/bin" >> $GITHUB_PATH
+        cd $GITHUB_WORKSPACE
+    - name: "Publish to pub.dev"
+      uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+      with:
+        working-directory: libphonenumber_platform_interface/
