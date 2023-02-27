@@ -2,7 +2,6 @@ part of libphonenumber_interop;
 
 @JS('PhoneNumberUtil')
 class PhoneNumberUtilJsImpl {
-
   external PhoneNumberUtilJsImpl._();
 
   @JS('getInstance')
@@ -250,5 +249,4 @@ class PhoneNumberUtilJsImpl {
   ///
   /// End of Regexp test
   ///
-
 }

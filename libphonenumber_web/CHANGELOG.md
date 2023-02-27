@@ -1,3 +1,10 @@
+## 0.3.0
+* Updated dependencies
+* Removed getNameForNumber
+* Added getAllCountries
+* Added getFormattedExampleNumber
+* Improved quality of code
+
 ## 0.2.0+1
 * Updated dependencies
 
