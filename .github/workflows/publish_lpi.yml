@@ -17,7 +17,6 @@ jobs:
         git clone https://github.com/flutter/flutter.git --depth 1 -b stable _flutter
         echo "$HOME/_flutter/bin" >> $GITHUB_PATH
         cd $GITHUB_WORKSPACE
-    - name: "Publish to pub.dev"
-      uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    - uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
       with:
         working-directory: libphonenumber_platform_interface/
