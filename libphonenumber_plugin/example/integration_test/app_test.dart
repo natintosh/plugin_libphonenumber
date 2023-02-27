@@ -1,4 +1,4 @@
-import 'dart:io';
+// ignore_for_file: depend_on_referenced_packages
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
@@ -13,9 +13,9 @@ void main() {
       final instance = LibPhoneNumberPlatform.instance;
 
       final validPhoneNumber =
-      await instance.isValidPhoneNumber('+2348021234567', 'NG');
+          await instance.isValidPhoneNumber('+2348021234567', 'NG');
       final notValidPhoneNumber =
-      await instance.isValidPhoneNumber('+2341111111111', 'NG');
+          await instance.isValidPhoneNumber('+2341111111111', 'NG');
 
       expect(validPhoneNumber, true);
       expect(notValidPhoneNumber, false);
@@ -25,10 +25,10 @@ void main() {
       final instance = LibPhoneNumberPlatform.instance;
 
       final normalPhoneNumber =
-      await instance.normalizePhoneNumber('+234 802 123 4567', 'NG');
+          await instance.normalizePhoneNumber('+234 802 123 4567', 'NG');
 
       final notNormalPhoneNumber =
-      await instance.normalizePhoneNumber('+234 802', 'NG');
+          await instance.normalizePhoneNumber('+234 802', 'NG');
 
       expect(normalPhoneNumber, '+2348021234567');
       expect(notNormalPhoneNumber, '+234802');
@@ -37,8 +37,7 @@ void main() {
     test("libphonenumber-web: getRegionInfo", () async {
       final instance = LibPhoneNumberPlatform.instance;
 
-      final data =
-      await instance.getRegionInfo('+2348021234567', 'NG');
+      final data = await instance.getRegionInfo('+2348021234567', 'NG');
 
       final regionInfo = RegionInfo.fromJson(data);
 
@@ -50,8 +49,7 @@ void main() {
     test("libphonenumber-web: getNumberType", () async {
       final instance = LibPhoneNumberPlatform.instance;
 
-      final index =
-      await instance.getNumberType('+2348021234567', 'NG');
+      final index = await instance.getNumberType('+2348021234567', 'NG');
 
       final type = PhoneNumberType.fromIndex(index);
 
@@ -61,27 +59,32 @@ void main() {
     test("libphonenumber-web: formatAsYouType", () async {
       final instance = LibPhoneNumberPlatform.instance;
 
-      final isoCode = 'NG';
+      const isoCode = 'NG';
 
       expect(await instance.formatAsYouType('+', isoCode), '+');
       expect(await instance.formatAsYouType('+2', isoCode), '+2');
-      expect(await instance.formatAsYouType('+23', isoCode), matches(RegExp(r'\+2\D?3')));
-      expect(await instance.formatAsYouType('+234', isoCode), matches(RegExp(r'\+234\D?')));
+      expect(await instance.formatAsYouType('+23', isoCode),
+          matches(RegExp(r'\+2\D?3')));
+      expect(await instance.formatAsYouType('+234', isoCode),
+          matches(RegExp(r'\+234\D?')));
       expect(await instance.formatAsYouType('+2348', isoCode), '+234 8');
       expect(await instance.formatAsYouType('+23480', isoCode), '+234 80');
       expect(await instance.formatAsYouType('+234802', isoCode), '+234 802');
       expect(await instance.formatAsYouType('+2348021', isoCode), '+234 802 1');
-      expect(await instance.formatAsYouType('+23480212', isoCode), '+234 802 12');
-      expect(await instance.formatAsYouType('+234802123', isoCode), '+234 802 123');
-      expect(await instance.formatAsYouType('+2348021234', isoCode), '+234 802 123 4');
-      expect(await instance.formatAsYouType('+23480212345', isoCode), '+234 802 123 45');
-      expect(await instance.formatAsYouType('+234802123456', isoCode), '+234 802 123 456');
-      expect(await instance.formatAsYouType('+2348021234567', isoCode), '+234 802 123 4567');
+      expect(
+          await instance.formatAsYouType('+23480212', isoCode), '+234 802 12');
+      expect(await instance.formatAsYouType('+234802123', isoCode),
+          '+234 802 123');
+      expect(await instance.formatAsYouType('+2348021234', isoCode),
+          '+234 802 123 4');
+      expect(await instance.formatAsYouType('+23480212345', isoCode),
+          '+234 802 123 45');
+      expect(await instance.formatAsYouType('+234802123456', isoCode),
+          '+234 802 123 456');
+      expect(await instance.formatAsYouType('+2348021234567', isoCode),
+          '+234 802 123 4567');
 
-
-
-      final index =
-      await instance.getNumberType('+2348021234567', 'NG');
+      final index = await instance.getNumberType('+2348021234567', 'NG');
 
       final type = PhoneNumberType.fromIndex(index);
 
