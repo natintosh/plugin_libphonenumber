@@ -1,3 +1,15 @@
+.DS_Store
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+.packages
+.pub/
+
+build/
+
+pubspec.lock
+
 integration_test/
 test_driver/
 web/
