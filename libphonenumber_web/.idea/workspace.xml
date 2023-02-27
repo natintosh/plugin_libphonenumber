@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,26 +22,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d9f675-7405-413d-9f1d-e721d9af796a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/libphonenumber_platform.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/method_channel/libhonenumber_method_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/lib/src/method_channel/libhonenumber_method_channel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_platform_interface/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libphonenumber_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libphonenumber_plugin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/lib/src/phone_number_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/lib/src/phone_number_util.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/libphonenumber_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/libphonenumber_plugin.dart" afterDir="false" />
-    </list>
+    <list default="true" id="08d9f675-7405-413d-9f1d-e721d9af796a" name="Default Changelist" comment="Completed integration test for libphonenumber_web" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1q1FvDod7mr3NpkT6dK0CRgMkOT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -46,14 +47,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="dart.analysis.tool.window.force.activate" value="true" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../libphonenumber_platform_interface" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nathaniel.ogunye/StudioProjects/plugin_libphonenumber/libphonenumber_web/integration_test&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/integration_test" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/example" />
+    </key>
   </component>
+  <component name="RunManager" selected="Flutter Test.tests in app_test.dart">
+    <configuration name="tests in app_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/integration_test/app_test.dart" />
+      <option name="useRegexp" value="false" />
+      <option name="additionalArgs" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flutter.example/lib/main.dart" />
+      <item itemvalue="Flutter Test.tests in app_test.dart" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.tests in app_test.dart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -65,6 +96,14 @@
       <option name="presentableId" value="Default" />
       <updated>1616239417445</updated>
     </task>
+    <task id="LOCAL-00001" summary="Completed integration test for libphonenumber_web">
+      <created>1676827496749</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676827496749</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,20 +116,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="488" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1616240727106">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="488" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1616240727106" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1616589295895">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1616589295895" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1616589390923">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1616589390923" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Completed integration test for libphonenumber_web" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed integration test for libphonenumber_web" />
   </component>
 </project>

@@ -10,7 +10,7 @@ class LibPhoneNumberPlugin extends LibPhoneNumberPlatform {
   @override
   Future<String?> formatAsYouType(String phoneNumber, String isoCode) async {
     AsYouTypeFormatterJsImpl phoneUtilJsImpl =
-        AsYouTypeFormatterJsImpl(isoCode.toUpperCase());
+    AsYouTypeFormatterJsImpl(isoCode.toUpperCase());
     String? result;
 
     for (int i = 0; i < phoneNumber.length; i++) {
@@ -21,16 +21,10 @@ class LibPhoneNumberPlugin extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<String?> getNameForNumber(String phoneNumber, String isoCode) async {
-    throw new UnimplementedError(
-        'getNameForNumber not implement for Flutter Web');
-  }
-
-  @override
   Future<int?> getNumberType(String phoneNumber, String isoCode) async {
     PhoneNumberUtilJsImpl phoneUtilJsImpl = PhoneNumberUtilJsImpl.getInstance();
     PhoneNumberJsImpl phoneNumberJsImpl =
-        phoneUtilJsImpl.parse(phoneNumber, isoCode.toUpperCase());
+    phoneUtilJsImpl.parse(phoneNumber, isoCode.toUpperCase());
 
     int index = phoneUtilJsImpl.getNumberType(phoneNumberJsImpl);
 
@@ -38,17 +32,17 @@ class LibPhoneNumberPlugin extends LibPhoneNumberPlatform {
   }
 
   @override
-  Future<Map<String, dynamic>?> getRegionInfo(
-      String phoneNumber, String isoCode) async {
+  Future<Map<String, dynamic>?> getRegionInfo(String phoneNumber,
+      String isoCode) async {
     PhoneNumberUtilJsImpl phoneUtilJsImpl = PhoneNumberUtilJsImpl.getInstance();
     PhoneNumberJsImpl phoneNumberJsImpl =
-        phoneUtilJsImpl.parse(phoneNumber, isoCode.toUpperCase());
+    phoneUtilJsImpl.parse(phoneNumber, isoCode.toUpperCase());
 
     String regionCode =
-        phoneUtilJsImpl.getRegionCodeForNumber(phoneNumberJsImpl);
+    phoneUtilJsImpl.getRegionCodeForNumber(phoneNumberJsImpl);
     String countryCode = phoneNumberJsImpl.getCountryCode().toString();
     String formattedNumber = phoneUtilJsImpl.format(
-        phoneNumberJsImpl, PhoneNumberFormat.NATIONAL.index);
+        phoneNumberJsImpl, PhoneNumberFormat.NATIONAL.value);
 
     RegionInfo info = RegionInfo(
         regionPrefix: countryCode,
@@ -62,21 +56,50 @@ class LibPhoneNumberPlugin extends LibPhoneNumberPlatform {
   Future<bool?> isValidPhoneNumber(String phoneNumber, String isoCode) async {
     PhoneNumberUtilJsImpl phoneUtilJsImpl = PhoneNumberUtilJsImpl.getInstance();
     PhoneNumberJsImpl phoneNumberJsImpl =
-        phoneUtilJsImpl.parse(phoneNumber, isoCode.toUpperCase());
+    phoneUtilJsImpl.parse(phoneNumber, isoCode.toUpperCase());
 
     return phoneUtilJsImpl.isValidNumber(phoneNumberJsImpl);
   }
 
   @override
-  Future<String?> normalizePhoneNumber(
-      String phoneNumber, String isoCode) async {
+  Future<String?> normalizePhoneNumber(String phoneNumber,
+      String isoCode) async {
     PhoneNumberUtilJsImpl phoneUtilJsImpl = PhoneNumberUtilJsImpl.getInstance();
     PhoneNumberJsImpl phoneNumberJsImpl =
-        phoneUtilJsImpl.parse(phoneNumber, isoCode.toUpperCase());
+    phoneUtilJsImpl.parse(phoneNumber, isoCode.toUpperCase());
 
     String normalized =
-        phoneUtilJsImpl.format(phoneNumberJsImpl, PhoneNumberFormat.E164.index);
+    phoneUtilJsImpl.format(phoneNumberJsImpl, PhoneNumberFormat.E164.value);
 
     return normalized;
+  }
+
+  @override
+  Future<List<String>?> getAllCountries() async {
+    PhoneNumberUtilJsImpl phoneUtilJsImpl = PhoneNumberUtilJsImpl.getInstance();
+
+    final allCountries = phoneUtilJsImpl.getSupportedRegions().map<String>((
+        e) => e as String).toList();
+
+    return allCountries;
+  }
+
+  @override
+  Future<String?> getFormattedExampleNumber(String isoCode,
+      PhoneNumberType type,
+      PhoneNumberFormat format,) async {
+    PhoneNumberUtilJsImpl phoneUtilJsImpl = PhoneNumberUtilJsImpl.getInstance();
+
+    PhoneNumberJsImpl exampleNumber = phoneUtilJsImpl.getExampleNumberForType(
+      isoCode,
+      type.value,
+    );
+
+    String formattedExampleNumber = phoneUtilJsImpl.format(
+      exampleNumber,
+      format.value,
+    );
+
+    return formattedExampleNumber;
   }
 }

@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 /// /**
 ///  * INTERNATIONAL and NATIONAL formats are consistent with the definition in
 ///  * ITU-T Recommendation E123. However we follow local conventions such as
@@ -22,42 +24,19 @@
 /// };
 
 enum PhoneNumberFormat {
-  E164, //: 0,
-  INTERNATIONAL, //: 1,
-  NATIONAL, //: 2,
-  RFC3966, //: 3
-}
+  E164(value: 0), //: 0,
+  INTERNATIONAL(value: 1), //: 1,
+  NATIONAL(value: 2), //: 2,
+  RFC3966(value: 3); //: 3
 
-class PhoneNumberFormatUtil {
-  static PhoneNumberFormat getType(int? value) {
-    switch (value) {
-      case 0:
-        return PhoneNumberFormat.E164;
-      case 1:
-        return PhoneNumberFormat.INTERNATIONAL;
-      case 2:
-        return PhoneNumberFormat.NATIONAL;
-      case 3:
-        return PhoneNumberFormat.RFC3966;
-      default:
-        return PhoneNumberFormat.E164;
-    }
-  }
-}
+  const PhoneNumberFormat({required this.value});
 
-extension phonenumberformatproperties on PhoneNumberFormat {
-  int get value {
-    switch (this) {
-      case PhoneNumberFormat.E164:
-        return 0;
-      case PhoneNumberFormat.INTERNATIONAL:
-        return 1;
-      case PhoneNumberFormat.NATIONAL:
-        return 2;
-      case PhoneNumberFormat.RFC3966:
-        return 3;
-      default:
-        return 0;
-    }
+  final int value;
+
+  static PhoneNumberFormat fromIndex(int? index) {
+    return PhoneNumberFormat.values.singleWhere(
+      (element) => element.value == index,
+      orElse: () => PhoneNumberFormat.E164,
+    );
   }
 }

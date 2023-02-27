@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,26 +22,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0c6e94d-2f5f-4542-b8a7-c0ce23235f89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/libphonenumber_platform.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/libphonenumber_platform.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/method_channel/libhonenumber_method_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/method_channel/libhonenumber_method_channel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libphonenumber_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/libphonenumber_plugin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/lib/src/phone_number_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/lib/src/phone_number_util.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_plugin/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_plugin/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libphonenumber_web/lib/src/libphonenumber_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../libphonenumber_web/lib/src/libphonenumber_plugin.dart" afterDir="false" />
-    </list>
+    <list default="true" id="b0c6e94d-2f5f-4542-b8a7-c0ce23235f89" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1q1Frgn6clzGhWZNG8cbcfQ2hLv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -46,15 +47,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nathaniel.ogunye/StudioProjects/plugin_libphonenumber/libphonenumber_platform_interface/test&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
   </component>
+  <component name="RunManager">
+    <configuration name="tests in libphonenumber_platform_interface_method_channel_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/test/libphonenumber_platform_interface_method_channel_test.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.tests in libphonenumber_platform_interface_method_channel_test.dart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -78,16 +97,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="319" y="139" key="FileChooserDialogImpl" timestamp="1616239402595">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="319" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1616239402595" />
-    <state x="339" y="41" width="672" height="676" key="search.everywhere.popup" timestamp="1616589318196">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="339" y="41" width="672" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1616589318196" />
   </component>
 </project>

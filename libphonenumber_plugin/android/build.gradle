@@ -1,33 +1,50 @@
 group 'com.example.libphonenumber_plugin'
-version '1.0'
+version '1.0-SNAPSHOT'
 
 buildscript {
+    ext.kotlin_version = '1.8.0'
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath 'com.android.tools.build:gradle:7.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
-rootProject.allprojects {
+allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
 
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
 
     defaultConfig {
         minSdkVersion 16
     }
+
     dependencies {
-        compileOnly rootProject.findProject(":libphonenumber")
+        api 'com.googlecode.libphonenumber:libphonenumber:8.13.4'
     }
 }

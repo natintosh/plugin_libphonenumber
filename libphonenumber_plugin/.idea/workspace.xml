@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,16 +22,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ad297e8-2038-4b8c-babe-91c4ef3a37ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5ad297e8-2038-4b8c-babe-91c4ef3a37ea" name="Default Changelist" comment="Feat:&#10;&#10;1. Added .pubignore to libphonenumber_platform_interface&#10;2. Added example.md to libphonenumber_platform_interface&#10;3. Removed `getNameForNumber` from PlatformInterface&#10;4. Added `getAllCountries` from PlatformInterface&#10;5. Added `getFormattedExampleNumber` from PlatformInterface&#10;6. Improved quality of code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ios/Classes/SwiftLibphonenumberPlugin.swift" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1mYyfUIeVGb10erR8YfgiL6BZEp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -36,25 +51,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nathaniel.ogunye/StudioProjects/plugin_libphonenumber/libphonenumber_plugin/example&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/example" />
+    </key>
   </component>
-  <component name="RunManager" selected="Flutter.example/lib/main.dart">
+  <component name="RunManager" selected="Flutter Test.tests in libphonenumber_plugin_test.dart">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
       <method v="2" />
     </configuration>
+    <configuration name="tests in libphonenumber_plugin_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/test/libphonenumber_plugin_test.dart" />
+      <option name="useRegexp" value="false" />
+      <option name="additionalArgs" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flutter.example/lib/main.dart" />
+      <item itemvalue="Flutter.main.dart" />
+      <item itemvalue="Flutter Test.tests in libphonenumber_plugin_test.dart" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.tests in libphonenumber_plugin_test.dart" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -66,6 +102,49 @@
       <option name="presentableId" value="Default" />
       <updated>1609684921703</updated>
     </task>
+    <task id="LOCAL-00001" summary="&#10;1. Removed dependency on pub.dev libphonenumber&#10;2. Updated Google's Java libphonenumber package to latest">
+      <created>1673246343927</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673246343928</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&#10;1. Removed dependency on pub.dev libphonenumber&#10;2. Updated Google's Java libphonenumber package to latest">
+      <created>1673247826477</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673247826477</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&#10;1. Removed dependency on pub.dev libphonenumber from iOS&#10;2. Replaced libphonenumber-iOS to PhoneNumberKit">
+      <created>1673261438343</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673261438343</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fix:&#10;&#10;1. Fixed issue with natintosh/intl_phone_number_input#369&#10;&#10;Update:&#10;1. Depreciated getNameForNumber&#10;2. Added getAllCountries&#10;3. Added getFormattedExampleNumber">
+      <created>1676443558735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676443558735</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix:&#10;&#10;1. Fixed issue with natintosh/intl_phone_number_input#369&#10;&#10;Update:&#10;1. Depreciated getNameForNumber&#10;2. Added getAllCountries&#10;3. Added getFormattedExampleNumber">
+      <created>1676443883667</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676443883667</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Feat:&#10;&#10;1. Added .pubignore to libphonenumber_platform_interface&#10;2. Added example.md to libphonenumber_platform_interface&#10;3. Removed `getNameForNumber` from PlatformInterface&#10;4. Added `getAllCountries` from PlatformInterface&#10;5. Added `getFormattedExampleNumber` from PlatformInterface&#10;6. Improved quality of code">
+      <created>1677418202117</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677418202117</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,36 +157,12 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="100" y="100" width="1166" height="568" key="AVDManager" timestamp="1616598635547">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="100" y="100" width="1166" height="568" key="AVDManager/0.0.1366.768@0.0.1366.768" timestamp="1616598635547" />
-    <state x="319" y="139" key="FileChooserDialogImpl" timestamp="1616701893053">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="319" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1616701893053" />
-    <state width="1323" height="609" key="GridCell.Tab.0.bottom" timestamp="1616598993009">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="609" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1616598993009" />
-    <state width="1323" height="609" key="GridCell.Tab.0.center" timestamp="1616598993009">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="609" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1616598993009" />
-    <state width="1323" height="609" key="GridCell.Tab.0.left" timestamp="1616598993008">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="609" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1616598993008" />
-    <state width="1323" height="609" key="GridCell.Tab.0.right" timestamp="1616598993009">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="609" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1616598993009" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1616661047585">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1616661047585" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&#10;1. Removed dependency on pub.dev libphonenumber&#10;2. Updated Google's Java libphonenumber package to latest" />
+    <MESSAGE value="&#10;1. Removed dependency on pub.dev libphonenumber from iOS&#10;2. Replaced libphonenumber-iOS to PhoneNumberKit" />
+    <MESSAGE value="Fix:&#10;&#10;1. Fixed issue with natintosh/intl_phone_number_input#369&#10;&#10;Update:&#10;1. Depreciated getNameForNumber&#10;2. Added getAllCountries&#10;3. Added getFormattedExampleNumber" />
+    <MESSAGE value="Feat:&#10;&#10;1. Added .pubignore to libphonenumber_platform_interface&#10;2. Added example.md to libphonenumber_platform_interface&#10;3. Removed `getNameForNumber` from PlatformInterface&#10;4. Added `getAllCountries` from PlatformInterface&#10;5. Added `getFormattedExampleNumber` from PlatformInterface&#10;6. Improved quality of code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat:&#10;&#10;1. Added .pubignore to libphonenumber_platform_interface&#10;2. Added example.md to libphonenumber_platform_interface&#10;3. Removed `getNameForNumber` from PlatformInterface&#10;4. Added `getAllCountries` from PlatformInterface&#10;5. Added `getFormattedExampleNumber` from PlatformInterface&#10;6. Improved quality of code" />
   </component>
 </project>

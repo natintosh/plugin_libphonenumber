@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 ///
 /// * Enumeration CountryCodeSource.
 /// * @enum {number}
@@ -11,43 +13,20 @@
 /// };
 
 enum CountryCodeSource {
-  UNSPECIFIED,
-  FROM_NUMBER_WITH_PLUS_SIGN,
-  FROM_NUMBER_WITH_IDD,
-  FROM_NUMBER_WITHOUT_PLUS_SIGN,
-  FROM_DEFAULT_COUNTRY
-}
+  UNSPECIFIED(value: 0),
+  FROM_NUMBER_WITH_PLUS_SIGN(value: 1),
+  FROM_NUMBER_WITH_IDD(value: 5),
+  FROM_NUMBER_WITHOUT_PLUS_SIGN(value: 10),
+  FROM_DEFAULT_COUNTRY(value: 20);
 
-class CountryCodeSourceUtil {
-  static CountryCodeSource getType(int? value) {
-    switch (value) {
-      case 1:
-        return CountryCodeSource.FROM_NUMBER_WITH_PLUS_SIGN;
-      case 5:
-        return CountryCodeSource.FROM_NUMBER_WITH_IDD;
-      case 10:
-        return CountryCodeSource.FROM_NUMBER_WITHOUT_PLUS_SIGN;
-      case 20:
-        return CountryCodeSource.FROM_DEFAULT_COUNTRY;
-      default:
-        return CountryCodeSource.UNSPECIFIED;
-    }
-  }
-}
+  const CountryCodeSource({required this.value});
 
-extension countrycodesourceproperties on CountryCodeSource {
-  int get value {
-    switch (this) {
-      case CountryCodeSource.FROM_NUMBER_WITH_PLUS_SIGN:
-        return 1;
-      case CountryCodeSource.FROM_NUMBER_WITH_IDD:
-        return 5;
-      case CountryCodeSource.FROM_NUMBER_WITHOUT_PLUS_SIGN:
-        return 10;
-      case CountryCodeSource.FROM_DEFAULT_COUNTRY:
-        return 20;
-      default:
-        return 0;
-    }
+  final int value;
+
+  static CountryCodeSource fromIndex(int? index) {
+    return CountryCodeSource.values.singleWhere(
+      (element) => element.value == index,
+      orElse: () => CountryCodeSource.UNSPECIFIED,
+    );
   }
 }

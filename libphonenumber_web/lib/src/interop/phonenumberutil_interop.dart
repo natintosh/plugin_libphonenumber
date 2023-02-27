@@ -2,6 +2,9 @@ part of libphonenumber_interop;
 
 @JS('PhoneNumberUtil')
 class PhoneNumberUtilJsImpl {
+
+  external PhoneNumberUtilJsImpl._();
+
   @JS('getInstance')
   external static PhoneNumberUtilJsImpl getInstance();
 
@@ -33,7 +36,7 @@ class PhoneNumberUtilJsImpl {
   external String getCountryMobileToken(int countryCallingCode);
 
   @JS('getSupportedRegions')
-  external List<String> getSupportedRegions();
+  external List<dynamic> getSupportedRegions();
 
   @JS('getSupportedGlobalNetworkCallingCodes')
   external List<int> getSupportedGlobalNetworkCallingCodes();

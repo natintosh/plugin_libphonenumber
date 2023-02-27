@@ -1,3 +1,9 @@
+## 0.4.0
+ * Removed `getNameForNumber`
+ * Added `getAllCountries`
+ * Added `getFormattedExampleNumber`
+ * Improved quality of code
+
 ## 0.3.1
  * Resolved `RegionInfo.regionPrefix` is always `null`
 

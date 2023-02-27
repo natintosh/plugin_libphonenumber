@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 ///
 /// * @enum {number} Cost categories of short numbers.
 /// */
@@ -9,38 +11,19 @@
 /// };
 
 enum ShortNumberCost {
-  TOLL_FREE,
-  STANDARD_RATE,
-  PREMIUM_RATE,
-  UNKNOWN_COST,
-}
+  TOLL_FREE(value: 0),
+  STANDARD_RATE(value: 1),
+  PREMIUM_RATE(value: 2),
+  UNKNOWN_COST(value: 3);
 
-class ShortNumberCostUtil {
-  static ShortNumberCost getType(int? value) {
-    switch (value) {
-      case 0:
-        return ShortNumberCost.TOLL_FREE;
-      case 1:
-        return ShortNumberCost.STANDARD_RATE;
-      case 2:
-        return ShortNumberCost.PREMIUM_RATE;
-      default:
-        return ShortNumberCost.UNKNOWN_COST;
-    }
-  }
-}
+  const ShortNumberCost({required this.value});
 
-extension shortnumbercostproperties on ShortNumberCost {
-  int get value {
-    switch (this) {
-      case ShortNumberCost.TOLL_FREE:
-        return 0;
-      case ShortNumberCost.STANDARD_RATE:
-        return 1;
-      case ShortNumberCost.PREMIUM_RATE:
-        return 2;
-      default:
-        return 3;
-    }
+  final int value;
+
+  static ShortNumberCost fromIndex(int? index) {
+    return ShortNumberCost.values.singleWhere(
+      (element) => element.value == index,
+      orElse: () => ShortNumberCost.UNKNOWN_COST,
+    );
   }
 }
