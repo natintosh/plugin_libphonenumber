@@ -1,9 +1,12 @@
+## 0.3.1
+* Fixed edge case from [#15](https://github.com/natintosh/plugin_libphonenumber/issues/15)
+
 ## 0.3.0
-*  Removed getNameForNumber
-*  Added getAllCountries
-*  Added getFormattedExampleNumber
-*  Added Test
-*  Improve quality of code
+* Removed getNameForNumber
+* Added getAllCountries
+* Added getFormattedExampleNumber
+* Added Test
+* Improve quality of code
 
 ## 0.2.5
 * Updated libphonenumber and PhoneNumberToCarrierMapper on Android 
