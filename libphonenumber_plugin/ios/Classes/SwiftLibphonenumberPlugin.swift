@@ -159,7 +159,9 @@ public extension SwiftLibphonenumberPlugin {
     
     private func parsePhoneNumber(_ phonenumber: String, withRegion regionCode: String, ignoreType: Bool = true) throws -> PhoneNumber {
         do {
-            if (regionCode.isEmpty == false) {
+            let allSupportedCountries = phoneNumberKit.allCountries()
+            
+            if (regionCode.isEmpty == false && allSupportedCountries.contains(regionCode)) {
                 return try phoneNumberKit.parse(phonenumber, withRegion: regionCode, ignoreType: ignoreType)
             } else {
                 return try phoneNumberKit.parse(phonenumber, ignoreType: ignoreType)
