@@ -19,7 +19,7 @@ jobs:
           channel: 'stable'
       - name: Install dependencies
         run: flutter pub get
-        working-directory: libphonenumber_platform_interface/
+        working-directory: libphonenumber_plugin/
       - name: Setup dart
         uses: dart-lang/setup-dart@v1
       - name: Publish
