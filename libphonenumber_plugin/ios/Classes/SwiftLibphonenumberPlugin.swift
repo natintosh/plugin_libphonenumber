@@ -57,11 +57,14 @@ public class SwiftLibphonenumberPlugin: NSObject, FlutterPlugin {
         let arguments = call.arguments as! Dictionary<String, Any>
         let phoneNumber = arguments["phoneNumber"] as! String
         let isoCode = arguments["isoCode"] as! String
+        let format = arguments["format"] as! Int
+        
+        let phoneNumberFormat = getPhoneNumberFormatFor(index: format)
         
         do {
             let p: PhoneNumber = try parsePhoneNumber(phoneNumber, withRegion: isoCode.uppercased(), ignoreType: true)
             
-            let normalized: String = phoneNumberKit.format(p, toType: PhoneNumberFormat.e164)
+            let normalized: String = phoneNumberKit.format(p, toType: phoneNumberFormat)
             
             result(normalized)
         } catch let error as NSError {

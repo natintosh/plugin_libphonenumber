@@ -21,8 +21,8 @@ class PhoneNumberUtil {
   /// Accepts [phoneNumber] and [isoCode]
   /// Returns [Future<String>]
   static Future<String?> normalizePhoneNumber(
-      String phoneNumber, String isoCode) async {
-    return await _platform.normalizePhoneNumber(phoneNumber, isoCode);
+      String phoneNumber, String isoCode, [PhoneNumberFormat format = PhoneNumberFormat.E164]) async {
+    return await _platform.normalizePhoneNumber(phoneNumber, isoCode, format);
   }
 
   /// [getRegionInfo] about phone number

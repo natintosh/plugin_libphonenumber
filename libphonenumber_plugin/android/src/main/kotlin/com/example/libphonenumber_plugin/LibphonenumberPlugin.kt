@@ -56,9 +56,13 @@ class LibphonenumberPlugin : FlutterPlugin, MethodCallHandler {
   private fun handleNormalizePhoneNumber(call: MethodCall, result: MethodChannel.Result) {
     val phoneNumber = call.argument<String>("phoneNumber")
     val isoCode = call.argument<String>("isoCode")
+    val format = call.argument<Int>("format")
+
+    val phoneNumberFormat = getPhoneNumberFormatForIndex(format ?: 0)
+
     try {
       val p = phoneUtil.parse(phoneNumber, isoCode)
-      val normalized = phoneUtil.format(p, PhoneNumberFormat.E164)
+      val normalized = phoneUtil.format(p, phoneNumberFormat)
       result.success(normalized)
     } catch (e: NumberParseException) {
       result.error("NumberParseException", e.message, null)

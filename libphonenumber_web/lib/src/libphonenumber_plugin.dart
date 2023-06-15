@@ -63,13 +63,13 @@ class LibPhoneNumberPlugin extends LibPhoneNumberPlatform {
 
   @override
   Future<String?> normalizePhoneNumber(
-      String phoneNumber, String isoCode) async {
+      String phoneNumber, String isoCode, [PhoneNumberFormat format = PhoneNumberFormat.E164]) async {
     PhoneNumberUtilJsImpl phoneUtilJsImpl = PhoneNumberUtilJsImpl.getInstance();
     PhoneNumberJsImpl phoneNumberJsImpl =
         phoneUtilJsImpl.parse(phoneNumber, isoCode.toUpperCase());
 
     String normalized =
-        phoneUtilJsImpl.format(phoneNumberJsImpl, PhoneNumberFormat.E164.value);
+        phoneUtilJsImpl.format(phoneNumberJsImpl, format.value);
 
     return normalized;
   }

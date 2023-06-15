@@ -23,10 +23,10 @@ void main() {
       final instance = LibPhoneNumberPlatform.instance;
 
       final normalPhoneNumber =
-          await instance.normalizePhoneNumber('+234 802 123 4567', 'NG');
+          await instance.normalizePhoneNumber('+234 802 123 4567', 'NG', PhoneNumberFormat.NATIONAL);
 
       final notNormalPhoneNumber =
-          await instance.normalizePhoneNumber('+234 802', 'NG');
+          await instance.normalizePhoneNumber('+234 802', 'NG', PhoneNumberFormat.NATIONAL);
 
       expect(normalPhoneNumber, '+2348021234567');
       expect(notNormalPhoneNumber, '+234802');
