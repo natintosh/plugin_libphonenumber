@@ -27,7 +27,7 @@ abstract class LibPhoneNumberPlatform extends PlatformInterface {
   /// Accepts [phoneNumber] and [isoCode]
   /// Returns [Future<String>]
   Future<String?> normalizePhoneNumber(
-      String phoneNumber, String isoCode) async {
+      String phoneNumber, String isoCode, [PhoneNumberFormat format = PhoneNumberFormat.E164]) async {
     throw UnimplementedError(
         'normalizePhoneNumber() has not been implemented.');
   }

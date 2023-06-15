@@ -48,6 +48,10 @@ class MyAppState extends State<MyApp> {
 
       phoneNumber = '+2348021234567';
 
+      final normalizedNumber = await PhoneNumberUtil.normalizePhoneNumber(phoneNumber, 'NG', PhoneNumberFormat.NATIONAL);
+
+      log('\n\n\n Output NormalizedNumber ===> $normalizedNumber \n\n\n');
+
       String digits = '';
       for (final number in phoneNumber.characters) {
         digits += number;

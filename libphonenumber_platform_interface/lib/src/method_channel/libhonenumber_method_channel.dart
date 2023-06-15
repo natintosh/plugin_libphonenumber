@@ -58,11 +58,12 @@ class MethodChannelLibPhoneNumber extends LibPhoneNumberPlatform {
   /// Returns [Future<String>]
   @override
   Future<String?> normalizePhoneNumber(
-      String phoneNumber, String isoCode) async {
+      String phoneNumber, String isoCode, [PhoneNumberFormat format = PhoneNumberFormat.E164]) async {
     return await methodChannel
         .invokeMethod<String>('normalizePhoneNumber', <String, dynamic>{
       'phoneNumber': phoneNumber,
       'isoCode': isoCode,
+      'format': format.value
     });
   }
 
