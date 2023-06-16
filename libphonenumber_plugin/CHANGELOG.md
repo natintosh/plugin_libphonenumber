@@ -1,4 +1,7 @@
 ## 0.3.1
+* Added phone format to normalized phone number
+
+## 0.3.1
 * Fixed edge case from [#15](https://github.com/natintosh/plugin_libphonenumber/issues/15)
 
 ## 0.3.0

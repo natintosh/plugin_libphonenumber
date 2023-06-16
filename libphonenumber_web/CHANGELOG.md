@@ -1,4 +1,7 @@
-## 0.3.0
+## 0.3.1
+* Added phone format to normalized phone number
+
+* ## 0.3.0
 * Updated dependencies
 * Removed getNameForNumber
 * Added getAllCountries
