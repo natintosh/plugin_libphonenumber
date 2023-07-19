@@ -1,3 +1,7 @@
+## 0.4.0
+* Upgraded to gradle 8 for Android
+* Updated libphonenumber to version 8.13.16
+
 ## 0.3.1
 * Added phone format to normalized phone number
 
