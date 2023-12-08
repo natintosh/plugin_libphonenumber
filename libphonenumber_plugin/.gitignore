@@ -9,3 +9,5 @@ build/
 .idea/
 
 pubspec.lock
+.metadata
+libphonenumber_plugin.iml
