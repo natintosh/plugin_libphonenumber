@@ -1,3 +1,6 @@
+## 0.3.2
+* Updated Dependencies
+
 ## 0.3.1
 * Added phone format to normalized phone number
 

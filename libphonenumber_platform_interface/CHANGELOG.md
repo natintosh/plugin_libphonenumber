@@ -1,3 +1,6 @@
+## 0.4.2
+ * Updated dependencies
+
 ## 0.4.1
  * Added optional phone number format to normalize phone number function
 
