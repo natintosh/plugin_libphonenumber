@@ -9,3 +9,6 @@
 build/
 
 pubspec.lock
+
+.metadata
+libphonenumber_web.iml

@@ -8,3 +8,6 @@ build/
 .idea/
 
 pubspec.lock
+
+.metadata
+libphonenumber_platform_interface.iml

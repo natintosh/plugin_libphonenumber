@@ -1,4 +1,8 @@
-## 0.3.1
+## 0.3.3
+* Updated minimum OS version on iOS to iOS 12
+* Updated dependencies
+
+## 0.3.2
 * Added phone format to normalized phone number
 
 ## 0.3.1

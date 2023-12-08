@@ -13,3 +13,6 @@ pubspec.lock
 integration_test/
 test_driver/
 web/
+
+.metadata
+libphonenumber_web.iml
